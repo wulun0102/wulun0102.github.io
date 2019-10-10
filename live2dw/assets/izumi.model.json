@@ -1,0 +1,8 @@
+{
+	"type": "Live2D Model Setting",
+	"name": "izumi",
+	"model": "izumi_illust.moc",
+	"textures": [
+		"izumi_illust.1024/texture_00.png"
+	]
+}
