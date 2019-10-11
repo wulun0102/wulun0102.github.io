@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo常用命令 | WuLun_HexoBlog</title>
+  <title>tags | WuLun_HexoBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这是一个文科咸鱼的Blog开篇~ 本来是想在一个月前开始尝试博客的，结果鸽了一个月~~~ Windows 10  1903 node-v10.16.3-x64 Git-2.22.0-64-bit 这是我在搭建时的环境，本文操作用的cmd是 Git CMD">
-<meta name="keywords" content="Hexo搭建">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo常用命令">
-<meta property="og:url" content="http://yoursite.com/2019/10/08/Hexo常用命令/index.html">
+  <meta name="description" content="#Hellow Word">
+<meta name="keywords" content="文科生摸鱼">
+<meta property="og:type" content="website">
+<meta property="og:title" content="tags">
+<meta property="og:url" content="http://yoursite.com/tags/index.html">
 <meta property="og:site_name" content="WuLun_HexoBlog">
-<meta property="og:description" content="这是一个文科咸鱼的Blog开篇~ 本来是想在一个月前开始尝试博客的，结果鸽了一个月~~~ Windows 10  1903 node-v10.16.3-x64 Git-2.22.0-64-bit 这是我在搭建时的环境，本文操作用的cmd是 Git CMD">
+<meta property="og:description" content="#Hellow Word">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2019-10-09T06:15:35.049Z">
+<meta property="og:updated_time" content="2019-10-11T05:34:09.359Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo常用命令">
-<meta name="twitter:description" content="这是一个文科咸鱼的Blog开篇~ 本来是想在一个月前开始尝试博客的，结果鸽了一个月~~~ Windows 10  1903 node-v10.16.3-x64 Git-2.22.0-64-bit 这是我在搭建时的环境，本文操作用的cmd是 Git CMD">
+<meta name="twitter:title" content="tags">
+<meta name="twitter:description" content="#Hellow Word">
   
     <link rel="alternative" href="/atom.xml" title="WuLun_HexoBlog" type="application/atom+xml">
   
@@ -169,82 +169,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Hexo常用命令" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo常用命令
+      tags
     </h1>
   
 
         
-        <a href="/2019/10/08/Hexo常用命令/" class="archive-article-date">
-  	<time datetime="2019-10-08T00:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-08</time>
+        <a href="/tags/index.html" class="archive-article-date">
+  	<time datetime="2019-10-10T13:32:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这是一个文科咸鱼的Blog开篇~ 本来是想在一个月前开始尝试博客的，结果鸽了一个月~~~</p>
-<p><s><em>Windows 10  1903</em></s><br>
-<s><em>node-v10.16.3-x64</em></s><br>
-<s><em>Git-2.22.0-64-bit</em></s><br>
-这是我在搭建时的环境，本文操作用的cmd是 <strong>Git CMD</strong></p>
-<a id="more"></a>
-<h1>Hexo 常用命令</h1>
-<h4 id="新建博客"><a class="header-anchor" href="#新建博客">¶¶</a>新建博客</h4>
-<p>在 库 文件夹目标下使用命令<br>
-<code>hexo n &quot;New_blog&quot; == hexo new &quot;我的博客&quot;; #新建文章 注意&quot;n/new&quot;与后面引号中间有个空格</code></p>
-<p>Hexo 有三种默认布局：post、page 和 draft，它们分别对应不同的路径，而您自定义的其他布局和 post 相同，都将储存到 source/_posts 文件夹。</p>
-<table>
-<thead>
-<tr>
-<th>布局</th>
-<th style="text-align:left">路径</th>
-<th style="text-align:center">区别</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>post</td>
-<td style="text-align:left">source/_posts</td>
-<td style="text-align:center">内容</td>
-</tr>
-<tr>
-<td>page</td>
-<td style="text-align:left">source</td>
-<td style="text-align:center">内容</td>
-</tr>
-<tr>
-<td>draft</td>
-<td style="text-align:left">source/_drafts</td>
-<td style="text-align:center">内容</td>
-</tr>
-</tbody>
-</table>
-<p>格式为：<br>
-<code>hexo n page &quot;New_page&quot;; #缺省状态下为post类型 注意空格</code></p>
-<hr>
-<h4 id="hexo-服务"><a class="header-anchor" href="#hexo-服务">¶¶</a>Hexo 服务</h4>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">hexo s == hexo server #启动服务预览</span><br><span class="line">hexo server -s #静态模式</span><br><span class="line">hexo server -p 5000 #更改端口</span><br><span class="line">hexo server -i 111.101.1.1 #自定义 IP</span><br><span class="line"></span><br><span class="line">hexo clean #清除缓存文件db.json 和已生成的静态文件public</span><br><span class="line">hexo g # ==hexo generate #生成静态页面至public目录</span><br><span class="line">hexo d # ==hexo deploy #将.deploy目录部署到GitHub</span><br><span class="line"></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d # 常用的组合命令，清除缓存，生成静态文件，并部署到指定仓库</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a><br>
-More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a><br>
-More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<hr>
-<h4 id="hexo"><a class="header-anchor" href="#hexo">¶¶</a>hexo</h4>
-<pre><code>npm install hexo -g #安装
-npm update hexo -g #升级 
-hexo init #初始化
-
-npm install --save hexo-deployer-git # hexo d后 ERROR Deployer not found: git
-</code></pre>
-<hr>
-<h2 id="参考文章我会列到-hello-world-中"><a class="header-anchor" href="#参考文章我会列到-hello-world-中">¶¶</a>参考文章我会列到 Hello World 中</h2>
-<h5 id="over"><a class="header-anchor" href="#over">¶¶</a>Over</h5>
+        <p>#Hellow Word</p>
 
       
 
@@ -284,17 +229,6 @@ npm install --save hexo-deployer-git # hexo d后 ERROR Deployer not found: git
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Hexo搭建</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -345,7 +279,7 @@ npm install --save hexo-deployer-git # hexo d后 ERROR Deployer not found: git
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/08/Hexo常用命令/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/tags/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -357,25 +291,6 @@ npm install --save hexo-deployer-git # hexo d后 ERROR Deployer not found: git
 </article>
 
   
-<nav id="article-nav">
-  
-    <a href="/2019/10/10/Java的线/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Java的线
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2019/10/08/Markdown-基本语法/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Markdown 基本语法</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -397,7 +312,7 @@ npm install --save hexo-deployer-git # hexo d后 ERROR Deployer not found: git
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number">1.</span> <span class="toc-text">Hexo 常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#新建博客"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">¶¶新建博客</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#hexo-服务"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">¶¶Hexo 服务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#hexo"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">¶¶hexo</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文章我会列到-hello-world-中"><span class="toc-number">1.1.</span> <span class="toc-text">¶¶参考文章我会列到 Hello World 中</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#over"><span class="toc-number">1.1.0.0.1.</span> <span class="toc-text">¶¶Over</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+                    目录，不存在的…
                     </div>
                 </span>
             </div>
@@ -439,7 +354,7 @@ npm install --save hexo-deployer-git # hexo d后 ERROR Deployer not found: git
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
