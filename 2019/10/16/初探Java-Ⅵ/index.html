@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: Hexo搭建 | WuLun_HexoBlog</title>
+  <title>[初探Java]--Ⅵ | WuLun_HexoBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="文科摸鱼选手">
-<meta property="og:type" content="website">
-<meta property="og:title" content="WuLun_HexoBlog">
-<meta property="og:url" content="http://yoursite.com/tags/Hexo搭建/index.html">
+  <meta name="description" content="第陆次作业  进制转换 日期类的使用 线性表的使用 排序集合的使用 映射类的使用  !😗">
+<meta name="keywords" content="Java的开始">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[初探Java]--Ⅵ">
+<meta property="og:url" content="http://yoursite.com/2019/10/16/初探Java-Ⅵ/index.html">
 <meta property="og:site_name" content="WuLun_HexoBlog">
+<meta property="og:description" content="第陆次作业  进制转换 日期类的使用 线性表的使用 排序集合的使用 映射类的使用  !😗">
 <meta property="og:locale" content="zh-tw">
+<meta property="og:updated_time" content="2019-10-16T00:18:25.014Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WuLun_HexoBlog">
+<meta name="twitter:title" content="[初探Java]--Ⅵ">
+<meta name="twitter:description" content="第陆次作业  进制转换 日期类的使用 线性表的使用 排序集合的使用 映射类的使用  !😗">
   
     <link rel="alternative" href="/atom.xml" title="WuLun_HexoBlog" type="application/atom+xml">
   
@@ -165,146 +169,219 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-初探Java-Ⅵ" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/08/Markdown-基本语法/" class="archive-article-date">
-  	<time datetime="2019-10-08T10:30:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-08</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/08/Markdown-基本语法/">Markdown 基本语法</a>
+    <h1 class="article-title" itemprop="name">
+      [初探Java]--Ⅵ
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/10/16/初探Java-Ⅵ/" class="archive-article-date">
+  	<time datetime="2019-10-16T08:12:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>第陆次作业</p>
+<ol>
+<li>进制转换</li>
+<li>日期类的使用</li>
+<li>线性表的使用</li>
+<li>排序集合的使用</li>
+<li>映射类的使用</li>
+</ol>
+<p>!😗</p>
+<a id="more"></a>
+<h4 id="进制转换"><a class="header-anchor" href="#进制转换">¶¶</a>进制转换</h4>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 进制转化 </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 输入一个某种进制的整数，将其转换为其它进制的整数。</span></span><br><span class="line">	<span class="comment">// 说明：仅考虑十、二、八和十六进制。</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> buffer;</span><br><span class="line">		Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		System.out.println(<span class="string">" 请输入目标字串  (说明：仅考虑十、二、八和十六进制)"</span>);</span><br><span class="line">		<span class="keyword">int</span> S = sc.nextInt();</span><br><span class="line"></span><br><span class="line">		System.out.println(<span class="string">" 请输入原进制 ： "</span>);</span><br><span class="line">		<span class="keyword">int</span> Radix = sc.nextInt();</span><br><span class="line"></span><br><span class="line">		System.out.println(<span class="string">" 请输入想要转化等到的进制 ："</span>);</span><br><span class="line">		<span class="keyword">int</span> O = sc.nextInt();<span class="comment">//想要转化等到的进制</span></span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (Radix == <span class="number">10</span>) &#123;</span><br><span class="line">			System.out.println(Integer.toString(S, O));</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="comment">// 将原目标字符转换为10进制字符</span></span><br><span class="line">			buffer = Integer.parseInt(S + <span class="string">""</span>, Radix);</span><br><span class="line">			<span class="comment">// 再转换到其他进制；</span></span><br><span class="line">			System.out.println(Integer.toString(buffer, O));</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="日期类的使用"><a class="header-anchor" href="#日期类的使用">¶¶</a>日期类的使用</h4>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.text.DateFormat;</span><br><span class="line"><span class="keyword">import</span> java.text.SimpleDateFormat;</span><br><span class="line"><span class="keyword">import</span> java.util.Calendar;</span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"><span class="keyword">import</span> java.util.GregorianCalendar;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Calender</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 日期类的使用。</span></span><br><span class="line">	<span class="comment">// 显示今天的年月日、时分秒和毫秒数。</span></span><br><span class="line">	<span class="comment">// 显示今天是星期几、是今年内的第几天。</span></span><br><span class="line">	<span class="comment">// 显示本月共几天，今年是不是闰年。</span></span><br><span class="line">	<span class="comment">// 显示两个日期的差，包括年月日、时分秒和毫秒差值。</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		Date date = <span class="keyword">new</span> Date();</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 显示今天的年月日、时分秒和毫秒数。</span></span><br><span class="line">		System.out.printf(<span class="string">" %tF %tT 和    %tL毫秒"</span>, date, date, date);</span><br><span class="line">		System.out.println();</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 显示今天是星期几、是今年内的第几天</span></span><br><span class="line">		System.out.printf(<span class="string">"今天 是 今年的第 %tj天  并且是  %tA"</span>, date, date);</span><br><span class="line">		System.out.println();</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 显示本月共几天，今年是不是闰年。</span></span><br><span class="line">		Calendar cal = Calendar.getInstance();</span><br><span class="line">		</span><br><span class="line">		System.out.println(cal.getActualMaximum(Calendar.DATE));</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//今年是不是闰年。</span></span><br><span class="line">		GregorianCalendar cale = (GregorianCalendar) GregorianCalendar.getInstance();		</span><br><span class="line">		<span class="keyword">boolean</span> isLeapYear = cale.isLeapYear(cale.get(GregorianCalendar.YEAR));</span><br><span class="line">		System.out.println(<span class="string">"今年是不是闰年  :"</span> + isLeapYear);</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 显示两个日期的差，包括年月日、时分秒和毫秒差值。</span></span><br><span class="line">		<span class="comment">//日期格式化显示  年yyyy 月MM 日dd 时HH 分mm 秒ss 毫秒SS</span></span><br><span class="line">		DateFormat df = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd HH:mm:ss:SS"</span>);</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="keyword">long</span> V = <span class="number">1000</span> * <span class="number">60</span>;</span><br><span class="line">			<span class="comment">//将符合该格式的字符串转换为日期，若格式不相配，则会出错</span></span><br><span class="line">			Date d_small = df.parse(<span class="string">"2019-01-29 08:30:40:00"</span>);</span><br><span class="line">			Date d_big = df.parse(<span class="string">"2019-04-08 00:20:00:00"</span>);</span><br><span class="line">			<span class="keyword">long</span> diff = d_big.getTime() - d_small.getTime();<span class="comment">// 这样得到的差值是毫秒级别</span></span><br><span class="line"></span><br><span class="line">			<span class="keyword">long</span> days = diff / (V * <span class="number">60</span> * <span class="number">24</span>);</span><br><span class="line">			<span class="keyword">long</span> hours = (diff - days * (V * <span class="number">60</span> * <span class="number">24</span>)) / (V * <span class="number">60</span>);</span><br><span class="line">			<span class="keyword">long</span> minutes = (diff - days * (V * <span class="number">60</span> * <span class="number">24</span>) - hours * (V * <span class="number">60</span>)) / (V);</span><br><span class="line">			<span class="keyword">long</span> millisecond = (diff - days * (V * <span class="number">60</span> * <span class="number">24</span>) - hours * (V * <span class="number">60</span>) - minutes * V);</span><br><span class="line"></span><br><span class="line">			System.out.println(<span class="string">""</span> + days + <span class="string">"天  "</span> + hours + <span class="string">"小时  "</span> + minutes + <span class="string">"分  "</span> + millisecond + <span class="string">"毫秒  "</span>);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// String类的format()方法用于创建格式化的字符串以及连接多个字符串对象</span></span><br><span class="line">		<span class="comment">// String strDate =String.format("是今年的第%tj天!",date);</span></span><br><span class="line">		<span class="comment">// System.out.println(strDate);</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="线性表的使用"><a class="header-anchor" href="#线性表的使用">¶¶</a>线性表的使用</h4>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.Random;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Arraylist</span> </span>&#123;</span><br><span class="line">	<span class="comment">// 线性表的使用。使用ArrayList模拟一个一维整数数组。</span></span><br><span class="line">	<span class="comment">// 数据由Random类随机产生。</span></span><br><span class="line">	<span class="comment">// 进行对输入的一个整数进行顺序查找。并进行冒泡排序。</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		ArrayList random = <span class="keyword">new</span> ArrayList();</span><br><span class="line"></span><br><span class="line">		Random r = <span class="keyword">new</span> Random();</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">6</span>; i++) &#123;</span><br><span class="line">			<span class="comment">// 该数字和10取余以后生成的数字区间为(-10,10)</span></span><br><span class="line">			<span class="keyword">int</span> j = r.nextInt() % <span class="number">10</span>;</span><br><span class="line">			<span class="comment">// int n1 = r.nextInt(n);生成任意[0,n)区间的随机整数</span></span><br><span class="line">			random.add(j);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		System.out.println(<span class="string">"请输入整数 n"</span>);</span><br><span class="line">		<span class="keyword">int</span> n = sc.nextInt();</span><br><span class="line">		random.add(n);</span><br><span class="line"></span><br><span class="line">		System.out.println();</span><br><span class="line">		System.out.println(<span class="string">"原数组：  "</span> + random);</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 冒泡排序</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; random.size(); i++) &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; random.size(); j++) &#123;</span><br><span class="line"></span><br><span class="line">				<span class="keyword">int</span> o = (<span class="keyword">int</span>) random.get(j - <span class="number">1</span>);</span><br><span class="line">				<span class="keyword">int</span> p = (<span class="keyword">int</span>) random.get(j);</span><br><span class="line"></span><br><span class="line">				<span class="keyword">if</span> (o &gt; p) &#123;</span><br><span class="line">					random.set(j - <span class="number">1</span>, p);</span><br><span class="line">					random.set(j, o);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println();</span><br><span class="line">		System.out.println(<span class="string">"排序后数组：  "</span> + random);</span><br><span class="line">		System.out.println(random.indexOf(n));</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="排序集合的使用"><a class="header-anchor" href="#排序集合的使用">¶¶</a>排序集合的使用</h4>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Random;</span><br><span class="line"><span class="keyword">import</span> java.util.TreeSet;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TreeSet</span>测试 </span>&#123;</span><br><span class="line">	<span class="comment">//排序集合的使用。</span></span><br><span class="line">	<span class="comment">//使用TreeSet模拟一个一维整数数组。</span></span><br><span class="line">	<span class="comment">//其中，一维整数数组元素由Random类随机产生。</span></span><br><span class="line">	<span class="comment">//最后显示排序后的结果。</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		TreeSet&lt;Integer&gt; random = <span class="keyword">new</span> TreeSet&lt;&gt;();</span><br><span class="line"></span><br><span class="line">		Random r = <span class="keyword">new</span> Random();</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">9</span>; i++) &#123;</span><br><span class="line">			<span class="comment">// 该数字和10取余以后生成的数字区间为(-10,10)</span></span><br><span class="line">			<span class="keyword">int</span> j = r.nextInt() % <span class="number">10</span>;</span><br><span class="line">			<span class="comment">// int n1 = r.nextInt(n);生成任意[0,n)区间的随机整数</span></span><br><span class="line">			random.add(j);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		System.out.println();</span><br><span class="line">		System.out.println(<span class="string">"原数组：  "</span> + random );</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="映射类的使用"><a class="header-anchor" href="#映射类的使用">¶¶</a>映射类的使用</h4>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.LinkedHashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.Map.Entry;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">hash</span> </span>&#123;</span><br><span class="line">	<span class="comment">// 映射类的使用。</span></span><br><span class="line">	<span class="comment">// 使用HashMap保存英文-中文对照单词词典。</span></span><br><span class="line">	<span class="comment">// 单词词典可以增加和删除词汇。</span></span><br><span class="line">	<span class="comment">// 输入一个英文单词，翻译成中文并显示。</span></span><br><span class="line">	<span class="comment">// 输入一个中文单词，翻译成英文并显示。</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// LinkedHashMap.keySet() 原序</span></span><br><span class="line">		<span class="comment">// HashMap.keySet() 是按照哈希值进行排序</span></span><br><span class="line">		LinkedHashMap&lt;String, String&gt; map = <span class="keyword">new</span> LinkedHashMap&lt;String, String&gt;();</span><br><span class="line"></span><br><span class="line">		map.put(<span class="string">"prescient"</span>, <span class="string">"有先见之明的"</span>);</span><br><span class="line">		map.put(<span class="string">"progress"</span>, <span class="string">"进步"</span>);</span><br><span class="line">		map.put(<span class="string">"prodigious"</span>, <span class="string">"(数量等)巨大的"</span>);</span><br><span class="line">		map.put(<span class="string">"proclivity"</span>, <span class="string">"倾向性,癖性"</span>);</span><br><span class="line">		map.put(<span class="string">"outwit"</span>, <span class="string">"v.以机智取胜"</span>);</span><br><span class="line">		map.put(<span class="string">"outbreak"</span>, <span class="string">"n.爆发"</span>);</span><br><span class="line"></span><br><span class="line">		Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		System.out.println(<span class="string">"请输入查询的数据"</span>);</span><br><span class="line">		String n = sc.nextLine();</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (map.containsKey(n)) &#123;<span class="comment">// 键中是否包含这个数据</span></span><br><span class="line"></span><br><span class="line">			System.out.println(<span class="string">"匹配完成 : "</span> + map.get(n));<span class="comment">// 通过键拿值</span></span><br><span class="line"></span><br><span class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span> (map.containsValue(n)) &#123;</span><br><span class="line"></span><br><span class="line">			<span class="keyword">for</span> (Entry enm : map.entrySet()) &#123;</span><br><span class="line">				<span class="keyword">if</span> (n.equals(enm.getValue())) &#123; <span class="comment">// String使用equals和==比较的区别</span></span><br><span class="line">					System.out.println(<span class="string">"匹配完成 : "</span> + enm.getKey());</span><br><span class="line"></span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="comment">// System.out.println(enm); 显示键值对视图</span></span><br><span class="line">				<span class="comment">// 迭代后可以e.getKey()，e.getValue()取key和value（*但只能在循环体中使用）</span></span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			System.out.println(<span class="string">"无匹配选项"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="over"><a class="header-anchor" href="#over">¶¶</a>Over</h5>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              酩 茗，古同“酩”，酩酊
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>一起玩Pokemon吧！！！<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.jpg">
+                      <span class="reward-type">((*・∀・）ゞ→→</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/mwc.gif">
+                      <span class="reward-type">ԅ(¯﹃¯ԅ)</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Hexo搭建</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Java的开始</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/16/初探Java-Ⅵ/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/08/Hexo常用命令/" class="archive-article-date">
-  	<time datetime="2019-10-08T06:30:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-08</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2019/10/17/初探Java-Ⅶ/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          [初探Java]--Ⅶ
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/10/16/初探Java-Ⅴ/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">[初探Java]--Ⅴ</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/08/Hexo常用命令/">Hexo常用命令</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Hexo搭建</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#进制转换"><span class="toc-number">1.</span> <span class="toc-text">¶¶进制转换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#日期类的使用"><span class="toc-number">2.</span> <span class="toc-text">¶¶日期类的使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#线性表的使用"><span class="toc-number">3.</span> <span class="toc-text">¶¶线性表的使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#排序集合的使用"><span class="toc-number">4.</span> <span class="toc-text">¶¶排序集合的使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#映射类的使用"><span class="toc-number">5.</span> <span class="toc-text">¶¶映射类的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#over"><span class="toc-number">5.1.</span> <span class="toc-text">¶¶Over</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2000" class="archive-year">2000</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2000/01/02/hello-world/" class="archive-article-date">
-  	<time datetime="2000-01-02T08:30:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2000-01-02</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2000/01/02/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Hexo搭建</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -327,9 +404,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,

@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: Hexo搭建 | WuLun_HexoBlog</title>
+  <title>[初探Java]--Ⅶ | WuLun_HexoBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="文科摸鱼选手">
-<meta property="og:type" content="website">
-<meta property="og:title" content="WuLun_HexoBlog">
-<meta property="og:url" content="http://yoursite.com/tags/Hexo搭建/index.html">
+  <meta name="description" content="第柒次作业  线程题1-时间显示线程 线程题2-随机数求和线程 线程题3-素数线程 文件题1-学生成绩排序 文件题2-学生成绩统计 文件题3-文本文件统计  😗">
+<meta name="keywords" content="Java的开始">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[初探Java]--Ⅶ">
+<meta property="og:url" content="http://yoursite.com/2019/10/17/初探Java-Ⅶ/index.html">
 <meta property="og:site_name" content="WuLun_HexoBlog">
+<meta property="og:description" content="第柒次作业  线程题1-时间显示线程 线程题2-随机数求和线程 线程题3-素数线程 文件题1-学生成绩排序 文件题2-学生成绩统计 文件题3-文本文件统计  😗">
 <meta property="og:locale" content="zh-tw">
+<meta property="og:updated_time" content="2019-10-17T05:40:33.638Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WuLun_HexoBlog">
+<meta name="twitter:title" content="[初探Java]--Ⅶ">
+<meta name="twitter:description" content="第柒次作业  线程题1-时间显示线程 线程题2-随机数求和线程 线程题3-素数线程 文件题1-学生成绩排序 文件题2-学生成绩统计 文件题3-文本文件统计  😗">
   
     <link rel="alternative" href="/atom.xml" title="WuLun_HexoBlog" type="application/atom+xml">
   
@@ -165,146 +169,213 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-初探Java-Ⅶ" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/08/Markdown-基本语法/" class="archive-article-date">
-  	<time datetime="2019-10-08T10:30:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-08</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/08/Markdown-基本语法/">Markdown 基本语法</a>
+    <h1 class="article-title" itemprop="name">
+      [初探Java]--Ⅶ
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/10/17/初探Java-Ⅶ/" class="archive-article-date">
+  	<time datetime="2019-10-17T13:36:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>第柒次作业</p>
+<ol>
+<li>线程题1-时间显示线程</li>
+<li>线程题2-随机数求和线程</li>
+<li>线程题3-素数线程</li>
+<li>文件题1-学生成绩排序</li>
+<li>文件题2-学生成绩统计</li>
+<li>文件题3-文本文件统计</li>
+</ol>
+<p>😗</p>
+<a id="more"></a>
+<h4 id="线程题1-时间显示线程"><a class="header-anchor" href="#线程题1-时间显示线程">¶¶</a>线程题1-时间显示线程</h4>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Datework</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//时间显示线程。</span></span><br><span class="line">	<span class="comment">//设计一个示线程子类，每秒钟显示一次当前时间；</span></span><br><span class="line">	<span class="comment">//然后编写主类，在主函数中定义一个线程对象，并启动这个线程。</span></span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		Thread x = <span class="keyword">new</span> DateThread();</span><br><span class="line"></span><br><span class="line">		x.start();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">=====================================================</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.text.SimpleDateFormat;</span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DateThread</span> <span class="keyword">extends</span> <span class="title">Thread</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 通过正则式来设置输出的时间格式</span></span><br><span class="line">	SimpleDateFormat s = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy年MM月dd日  HH:mm:ss:SS"</span>);</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 重写run()方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">			String str = s.format(<span class="keyword">new</span> Date());</span><br><span class="line">			System.out.println(str);</span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				<span class="comment">// 间隔时间1秒</span></span><br><span class="line">				Thread.sleep(<span class="number">1000</span>);</span><br><span class="line">			&#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">				e.printStackTrace();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="线程题2-随机数求和线程"><a class="header-anchor" href="#线程题2-随机数求和线程">¶¶</a>线程题2-随机数求和线程</h4>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RandomWork</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//随机数求和线程。</span></span><br><span class="line">	<span class="comment">//设计一个线程子类，产生10000个随机数，并求和，显示和的结果；</span></span><br><span class="line">	<span class="comment">//然后编写主类，在主函数中定义一个线程对象，并启动这个线程。</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		Sumthread mt1=<span class="keyword">new</span> Sumthread();</span><br><span class="line">		</span><br><span class="line">		mt1.start();</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">================================================</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Random;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Sumthread</span> <span class="keyword">extends</span> <span class="title">Thread</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> m = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		Random r = <span class="keyword">new</span> Random();</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">1000</span>; i++) &#123;</span><br><span class="line"></span><br><span class="line">			<span class="keyword">int</span> j = r.nextInt(<span class="number">100</span>);</span><br><span class="line">			System.out.println(j);</span><br><span class="line">			</span><br><span class="line">			m += j;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		System.out.println(m);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="线程题3-素数线程"><a class="header-anchor" href="#线程题3-素数线程">¶¶</a>线程题3-素数线程</h4>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PrimeWork</span> </span>&#123;</span><br><span class="line">	<span class="comment">// 素数线程。</span></span><br><span class="line">	<span class="comment">// 设计一个线程子类，依次随机产生10000个随机整数（100～999）；</span></span><br><span class="line">	<span class="comment">// 再设计另一个线程子类，依次对每一个随机整数判断是不是素数，是则显示；</span></span><br><span class="line">	<span class="comment">// 然后编写主类，在主函数中定义这两个线程类的线程对象，并启动它们。</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 创建资源。</span></span><br><span class="line">		Flag f = <span class="keyword">new</span> Flag();</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 创建任务。</span></span><br><span class="line">		RandomThread th1 = <span class="keyword">new</span> RandomThread(f);</span><br><span class="line">		JudgeThread th2 = <span class="keyword">new</span> JudgeThread(f);</span><br><span class="line">		</span><br><span class="line">		Thread t2 = <span class="keyword">new</span> Thread(th2);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">new</span> Thread(th1).start();</span><br><span class="line">		Thread.sleep(<span class="number">500</span>);</span><br><span class="line">		t2.start();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">================================================</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RandomThread</span> <span class="keyword">implements</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line">	Flag f;</span><br><span class="line"></span><br><span class="line">	RandomThread(Flag f) &#123;</span><br><span class="line">		<span class="keyword">this</span>.f = f;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">1000</span>; i++) &#123;</span><br><span class="line"></span><br><span class="line">			<span class="keyword">int</span> j = (<span class="keyword">int</span>) (Math.random() * <span class="number">900</span>) + <span class="number">100</span>;<span class="comment">// j的范围[100~999];</span></span><br><span class="line"></span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				f.randomwait(j);</span><br><span class="line">				</span><br><span class="line">			&#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line"></span><br><span class="line">				e.printStackTrace();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">"判断结束"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">=================================================</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JudgeThread</span> <span class="keyword">implements</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 共享资源缓存类对象</span></span><br><span class="line">	Flag f;</span><br><span class="line"></span><br><span class="line">	JudgeThread(Flag f) &#123;</span><br><span class="line">		<span class="keyword">this</span>.f = f;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">1000</span>; i++) &#123;</span><br><span class="line"></span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				f.Judgewait();</span><br><span class="line">				</span><br><span class="line">			&#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line"></span><br><span class="line">				e.printStackTrace();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">==============================================</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Flag</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// ========================================================</span></span><br><span class="line">	<span class="comment">// 判断素数</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isPrime</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (n &lt; <span class="number">2</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">		<span class="keyword">if</span> (n == <span class="number">2</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">		<span class="keyword">if</span> (n % <span class="number">2</span> == <span class="number">0</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">3</span>; i * i &lt;= n; i += <span class="number">2</span>)</span><br><span class="line">			<span class="keyword">if</span> (n % i == <span class="number">0</span>)</span><br><span class="line">				<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// ========================================================</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> num;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 线程间通信信号，</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">boolean</span> flag = <span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">randomwait</span><span class="params">(<span class="keyword">int</span> num)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">this</span>.num = num;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (!flag) &#123; wait(); &#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 标记判断</span></span><br><span class="line">		flag = <span class="keyword">false</span>;</span><br><span class="line">		notify();</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">Judgewait</span><span class="params">()</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (isPrime(num)) &#123;</span><br><span class="line">			System.out.println(num);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">if</span> (flag) &#123; wait(); &#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 标记判断</span></span><br><span class="line">		flag = <span class="keyword">true</span>;</span><br><span class="line">		notify();</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="文件题1-学生成绩排序"><a class="header-anchor" href="#文件题1-学生成绩排序">¶¶</a>文件题1-学生成绩排序</h4>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.FileNotFoundException;</span><br><span class="line"><span class="keyword">import</span> java.io.PrintStream;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">import</span> java.util.TreeSet;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 成绩排序 </span>&#123;</span><br><span class="line">	<span class="comment">// 学生成绩排序。</span></span><br><span class="line">	<span class="comment">// 已有一个学生成绩文件，含有多位学生的成绩；</span></span><br><span class="line">	<span class="comment">// 读取这个文件中的每位学生的成绩，然后排序；</span></span><br><span class="line">	<span class="comment">// 最后将这些排好序的成绩写到另一个文件中</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line"></span><br><span class="line">			Scanner sc = <span class="keyword">new</span> Scanner(<span class="keyword">new</span> File(<span class="string">"I:\\Java_work\\Homework\\scores.txt"</span>));<span class="comment">// I:/Java_work/Homework反\也可以</span></span><br><span class="line">			TreeSet&lt;Double&gt; grade = <span class="keyword">new</span> TreeSet&lt;&gt;();</span><br><span class="line"></span><br><span class="line">			<span class="keyword">while</span> (sc.hasNextDouble()) &#123;</span><br><span class="line">				<span class="keyword">double</span> s = sc.nextDouble();</span><br><span class="line"></span><br><span class="line">				grade.add(s);</span><br><span class="line">			&#125;</span><br><span class="line">			sc.close();</span><br><span class="line"></span><br><span class="line">			PrintStream out = <span class="keyword">new</span> PrintStream(<span class="keyword">new</span> File(<span class="string">"StudentGrade.txt"</span>));</span><br><span class="line"></span><br><span class="line">			out.println(<span class="string">" 成绩 ： "</span> + grade);</span><br><span class="line">			out.close();</span><br><span class="line"></span><br><span class="line">		&#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">			System.out.println(<span class="string">"File error!"</span>);</span><br><span class="line"></span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			System.out.println(<span class="string">"Error!"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="文件题2-学生成绩统计"><a class="header-anchor" href="#文件题2-学生成绩统计">¶¶</a>文件题2-学生成绩统计</h4>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.FileNotFoundException;</span><br><span class="line"><span class="keyword">import</span> java.io.PrintStream;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 成绩统计 </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 学生成绩统计。</span></span><br><span class="line">	<span class="comment">// 已有一个学生成绩文件，含有多位学生的各三门课的成绩；</span></span><br><span class="line">	<span class="comment">// 读取这个文件中的每位学生的三门课成绩，然后计算均分；</span></span><br><span class="line">	<span class="comment">// 最后对这些均分按照大于或小于75分的界限，分别写到另两个文件中。</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line"></span><br><span class="line">			Scanner sc = <span class="keyword">new</span> Scanner(<span class="keyword">new</span> File(<span class="string">"I:\\Java_work\\Homework\\scores.txt"</span>));<span class="comment">// I:/Java_work/Homework反\也可以</span></span><br><span class="line">			PrintStream out1 = <span class="keyword">new</span> PrintStream(<span class="keyword">new</span> File(<span class="string">"75up_Grade.txt"</span>));</span><br><span class="line">			PrintStream out2 = <span class="keyword">new</span> PrintStream(<span class="keyword">new</span> File(<span class="string">"75down_Grade.txt"</span>));</span><br><span class="line"></span><br><span class="line">			<span class="keyword">while</span> (sc.hasNextDouble()) &#123;</span><br><span class="line"></span><br><span class="line">				<span class="keyword">double</span> avg = <span class="number">0</span>;<span class="comment">//这样创建中间变量是否合适？？？</span></span><br><span class="line">				ArrayList&lt;Double&gt; grade = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) &#123;</span><br><span class="line"></span><br><span class="line">					<span class="keyword">double</span> s = sc.nextDouble();</span><br><span class="line">					avg += s;</span><br><span class="line"></span><br><span class="line">					grade.add(s);</span><br><span class="line">				&#125;</span><br><span class="line"></span><br><span class="line">				System.out.println(grade);</span><br><span class="line"></span><br><span class="line">				<span class="keyword">if</span> (avg &gt;= <span class="number">225</span>) &#123;<span class="comment">//225 = 75 * 3 &lt;+_+&gt;</span></span><br><span class="line">					out1.println(grade);</span><br><span class="line">				&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">					out2.println(grade);</span><br><span class="line">				&#125;</span><br><span class="line"></span><br><span class="line">			&#125;</span><br><span class="line">			sc.close();</span><br><span class="line">			out1.close();</span><br><span class="line">			out1.close();</span><br><span class="line"></span><br><span class="line">		&#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">			System.out.println(<span class="string">"File error!"</span>);</span><br><span class="line"></span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			System.out.println(<span class="string">"Error!"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="文件题3-文本文件统计"><a class="header-anchor" href="#文件题3-文本文件统计">¶¶</a>文件题3-文本文件统计</h4>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.FileNotFoundException;</span><br><span class="line"><span class="keyword">import</span> java.io.PrintStream;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.Collections;</span><br><span class="line"><span class="keyword">import</span> java.util.Comparator;</span><br><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">import</span> java.util.Map.Entry;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 字符统计 </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 文本文件统计。</span></span><br><span class="line">	<span class="comment">// 已有一个文本文件文件，请统计数字、大写字母、小写字母、汉字及其它字符出现的次数；</span></span><br><span class="line">	<span class="comment">// 然后将这些次数由大到小写到另一个文件之中。</span></span><br><span class="line">	<span class="comment">// 说明：将次数为零的过滤掉排序???</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		String s = <span class="string">""</span>;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line"></span><br><span class="line">			Scanner sc = <span class="keyword">new</span> Scanner(<span class="keyword">new</span> File(<span class="string">"I:\\Java_work\\Homework\\String.txt"</span>));<span class="comment">// I:/Java_work/Homework反\也可以</span></span><br><span class="line"></span><br><span class="line">			<span class="keyword">while</span> (sc.hasNext()) &#123;</span><br><span class="line"></span><br><span class="line">				s += sc.next();</span><br><span class="line">				<span class="comment">// System.out.println(sc.next());为什么加上这个会出错？？？</span></span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			sc.close();</span><br><span class="line">			System.out.println(<span class="string">"S = "</span> + s);</span><br><span class="line"></span><br><span class="line">			HashMap&lt;Character, Integer&gt; hm = <span class="keyword">new</span> HashMap&lt;Character, Integer&gt;();</span><br><span class="line"></span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; s.length(); i++) &#123;</span><br><span class="line"></span><br><span class="line">				<span class="keyword">char</span> ch = s.charAt(i);</span><br><span class="line"></span><br><span class="line">				<span class="keyword">if</span> (hm.get(ch) != <span class="keyword">null</span>) &#123;</span><br><span class="line">					hm.put(ch, hm.get(ch) + <span class="number">1</span>);</span><br><span class="line">				&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">					hm.put(ch, <span class="number">1</span>);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			<span class="comment">// 将map.entrySet()转换成list</span></span><br><span class="line"></span><br><span class="line">			List&lt;Map.Entry&lt;Character, Integer&gt;&gt; list = <span class="keyword">new</span> ArrayList&lt;Map.Entry&lt;Character, Integer&gt;&gt;(hm.entrySet());</span><br><span class="line"></span><br><span class="line">			Collections.sort(list, <span class="keyword">new</span> Comparator&lt;Map.Entry&lt;Character, Integer&gt;&gt;() &#123;</span><br><span class="line"></span><br><span class="line">				<span class="comment">// 降序排序</span></span><br><span class="line"></span><br><span class="line">				<span class="meta">@Override</span></span><br><span class="line">				<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compare</span><span class="params">(Entry&lt;Character, Integer&gt; o1, Entry&lt;Character, Integer&gt; o2)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">					<span class="comment">// return o1.getValue().compareTo(o2.getValue());</span></span><br><span class="line"></span><br><span class="line">					<span class="keyword">return</span> o2.getValue().compareTo(o1.getValue());</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;);</span><br><span class="line"></span><br><span class="line">			PrintStream out = <span class="keyword">new</span> PrintStream(<span class="keyword">new</span> File(<span class="string">"StringGrade.txt"</span>));</span><br><span class="line"></span><br><span class="line">			<span class="keyword">for</span> (Map.Entry&lt;Character, Integer&gt; en : list) &#123;</span><br><span class="line"></span><br><span class="line">				out.println(en.getKey() + <span class="string">"-&gt;"</span> + en.getValue());</span><br><span class="line">				System.out.println(en.getKey() + <span class="string">":"</span> + en.getValue());</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			out.close();</span><br><span class="line"></span><br><span class="line">		&#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">			System.out.println(<span class="string">"File error!"</span>);</span><br><span class="line"></span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			System.out.println(<span class="string">"Error!"</span> + e);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="over"><a class="header-anchor" href="#over">¶¶</a>Over</h5>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              酩 茗，古同“酩”，酩酊
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>一起玩Pokemon吧！！！<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.jpg">
+                      <span class="reward-type">((*・∀・）ゞ→→</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/mwc.gif">
+                      <span class="reward-type">ԅ(¯﹃¯ԅ)</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Hexo搭建</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Java的开始</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/17/初探Java-Ⅶ/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/08/Hexo常用命令/" class="archive-article-date">
-  	<time datetime="2019-10-08T06:30:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-08</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/16/初探Java-Ⅵ/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">[初探Java]--Ⅵ</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/08/Hexo常用命令/">Hexo常用命令</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Hexo搭建</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#线程题1-时间显示线程"><span class="toc-number">1.</span> <span class="toc-text">¶¶线程题1-时间显示线程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#线程题2-随机数求和线程"><span class="toc-number">2.</span> <span class="toc-text">¶¶线程题2-随机数求和线程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#线程题3-素数线程"><span class="toc-number">3.</span> <span class="toc-text">¶¶线程题3-素数线程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#文件题1-学生成绩排序"><span class="toc-number">4.</span> <span class="toc-text">¶¶文件题1-学生成绩排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#文件题2-学生成绩统计"><span class="toc-number">5.</span> <span class="toc-text">¶¶文件题2-学生成绩统计</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#文件题3-文本文件统计"><span class="toc-number">6.</span> <span class="toc-text">¶¶文件题3-文本文件统计</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#over"><span class="toc-number">6.1.</span> <span class="toc-text">¶¶Over</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2000" class="archive-year">2000</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2000/01/02/hello-world/" class="archive-article-date">
-  	<time datetime="2000-01-02T08:30:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2000-01-02</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2000/01/02/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Hexo搭建</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -327,9 +398,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
