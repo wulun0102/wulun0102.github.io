@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>[初探Java]--Ⅴ | WuLun_HexoBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第五次作业  多项式计算 数组转换 字符统计 子串出现的次数 两个字符串中最长公共子串  😜">
+  <meta name="description" content="第五次作业  多项式计算 数组转换 字符统计 子串出现的次数 两个字符串中最长公共子串  这周的的题还是相当有趣的😜看看还是非常值得的🔆">
 <meta name="keywords" content="Java的开始">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[初探Java]--Ⅴ">
 <meta property="og:url" content="http://yoursite.com/2019/10/16/初探Java-Ⅴ/index.html">
 <meta property="og:site_name" content="WuLun_HexoBlog">
-<meta property="og:description" content="第五次作业  多项式计算 数组转换 字符统计 子串出现的次数 两个字符串中最长公共子串  😜">
+<meta property="og:description" content="第五次作业  多项式计算 数组转换 字符统计 子串出现的次数 两个字符串中最长公共子串  这周的的题还是相当有趣的😜看看还是非常值得的🔆">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2019-10-15T16:22:15.010Z">
+<meta property="og:updated_time" content="2019-10-23T07:27:42.534Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[初探Java]--Ⅴ">
-<meta name="twitter:description" content="第五次作业  多项式计算 数组转换 字符统计 子串出现的次数 两个字符串中最长公共子串  😜">
+<meta name="twitter:description" content="第五次作业  多项式计算 数组转换 字符统计 子串出现的次数 两个字符串中最长公共子串  这周的的题还是相当有趣的😜看看还是非常值得的🔆">
   
     <link rel="alternative" href="/atom.xml" title="WuLun_HexoBlog" type="application/atom+xml">
   
@@ -192,12 +192,12 @@
         <p>第五次作业</p>
 <ol>
 <li>多项式计算</li>
-<li>数组转换</li>
-<li>字符统计</li>
-<li>子串出现的次数</li>
-<li>两个字符串中最长公共子串</li>
+<li><strong>数组转换</strong></li>
+<li><strong>字符统计</strong></li>
+<li><strong>子串出现的次数</strong></li>
+<li><strong>两个字符串中最长公共子串</strong></li>
 </ol>
-<p>😜</p>
+<p>这周的的题还是相当有趣的😜看看还是非常值得的🔆</p>
 <a id="more"></a>
 <h4 id="多项式计算"><a class="header-anchor" href="#多项式计算">¶¶</a>多项式计算</h4>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 多项式 </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 计算下列多项式的值。 pn=an*x^n+...+a1*x+a0</span></span><br><span class="line">		<span class="comment">//	 其中，"^"表示乘方。x、n以及ai（i=0,1,...,n-1）由键盘输入。</span></span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">double</span> sum = <span class="number">0</span>;</span><br><span class="line">		</span><br><span class="line">		Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">"请输入一个z"</span>);</span><br><span class="line">		<span class="keyword">int</span> max = sc.nextInt();</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">double</span> [] s = <span class="keyword">new</span> <span class="keyword">double</span> [max + <span class="number">1</span>];</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = max;i&gt;=<span class="number">0</span>; i--)&#123;</span><br><span class="line">			System.out.println(<span class="string">"请输入次数为"</span> + i +<span class="string">" 的项的系数 "</span> );</span><br><span class="line">			s[i] = sc.nextDouble();</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">"请输入x"</span>);</span><br><span class="line">		<span class="keyword">double</span> x = sc.nextDouble();</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= max ; i++)&#123;</span><br><span class="line">			</span><br><span class="line">			sum = sum + Math.pow(x, i) * s[i];</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		System.out.println(sum);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -478,11 +478,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Hololens踩得坑杂记</a>
+                <a href="javascript:void(0)" class="js-tag color3">Java的开始</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Java的开始</a>
+                <a href="javascript:void(0)" class="js-tag color4">Hololens踩的坑杂记</a>
               </li>
             
             <div class="clearfix"></div>

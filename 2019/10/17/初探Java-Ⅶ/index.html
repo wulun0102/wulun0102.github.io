@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>[初探Java]--Ⅶ | WuLun_HexoBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第柒次作业  线程题1-时间显示线程 线程题2-随机数求和线程 线程题3-素数线程 文件题1-学生成绩排序 文件题2-学生成绩统计 文件题3-文本文件统计  😗">
+  <meta name="description" content="第柒次作业  线程题1-时间显示线程 线程题2-随机数求和线程 线程题3-素数线程——flag NB✨ 文件题1-学生成绩排序 文件题2-学生成绩统计 文件题3-文本文件统计  在这里第一次接触了&amp;quot;线程&amp;quot;，是个神奇的东西，后来好像也就没有怎么碰了😱等以后有需求了再拾起来玩，也是在这里开始了解单个文件之间的互相&amp;quot;通讯&amp;quot;，这里面也是有蛮多的坑的‼️反正这个也是">
 <meta name="keywords" content="Java的开始">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[初探Java]--Ⅶ">
 <meta property="og:url" content="http://yoursite.com/2019/10/17/初探Java-Ⅶ/index.html">
 <meta property="og:site_name" content="WuLun_HexoBlog">
-<meta property="og:description" content="第柒次作业  线程题1-时间显示线程 线程题2-随机数求和线程 线程题3-素数线程 文件题1-学生成绩排序 文件题2-学生成绩统计 文件题3-文本文件统计  😗">
+<meta property="og:description" content="第柒次作业  线程题1-时间显示线程 线程题2-随机数求和线程 线程题3-素数线程——flag NB✨ 文件题1-学生成绩排序 文件题2-学生成绩统计 文件题3-文本文件统计  在这里第一次接触了&amp;quot;线程&amp;quot;，是个神奇的东西，后来好像也就没有怎么碰了😱等以后有需求了再拾起来玩，也是在这里开始了解单个文件之间的互相&amp;quot;通讯&amp;quot;，这里面也是有蛮多的坑的‼️反正这个也是">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2019-10-17T05:40:33.638Z">
+<meta property="og:updated_time" content="2019-10-23T07:35:35.917Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[初探Java]--Ⅶ">
-<meta name="twitter:description" content="第柒次作业  线程题1-时间显示线程 线程题2-随机数求和线程 线程题3-素数线程 文件题1-学生成绩排序 文件题2-学生成绩统计 文件题3-文本文件统计  😗">
+<meta name="twitter:description" content="第柒次作业  线程题1-时间显示线程 线程题2-随机数求和线程 线程题3-素数线程——flag NB✨ 文件题1-学生成绩排序 文件题2-学生成绩统计 文件题3-文本文件统计  在这里第一次接触了&amp;quot;线程&amp;quot;，是个神奇的东西，后来好像也就没有怎么碰了😱等以后有需求了再拾起来玩，也是在这里开始了解单个文件之间的互相&amp;quot;通讯&amp;quot;，这里面也是有蛮多的坑的‼️反正这个也是">
   
     <link rel="alternative" href="/atom.xml" title="WuLun_HexoBlog" type="application/atom+xml">
   
@@ -193,12 +193,12 @@
 <ol>
 <li>线程题1-时间显示线程</li>
 <li>线程题2-随机数求和线程</li>
-<li>线程题3-素数线程</li>
+<li><strong>线程题3-素数线程</strong>——flag NB✨</li>
 <li>文件题1-学生成绩排序</li>
 <li>文件题2-学生成绩统计</li>
 <li>文件题3-文本文件统计</li>
 </ol>
-<p>😗</p>
+<p>在这里第一次接触了&quot;线程&quot;，是个神奇的东西，后来好像也就没有怎么碰了😱等以后有需求了再拾起来玩，也是在这里开始了解单个文件之间的互相&quot;通讯&quot;，这里面也是有蛮多的坑的‼️反正这个也是受益良多的一周:simple_smile:</p>
 <a id="more"></a>
 <h4 id="线程题1-时间显示线程"><a class="header-anchor" href="#线程题1-时间显示线程">¶¶</a>线程题1-时间显示线程</h4>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Datework</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//时间显示线程。</span></span><br><span class="line">	<span class="comment">//设计一个示线程子类，每秒钟显示一次当前时间；</span></span><br><span class="line">	<span class="comment">//然后编写主类，在主函数中定义一个线程对象，并启动这个线程。</span></span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		Thread x = <span class="keyword">new</span> DateThread();</span><br><span class="line"></span><br><span class="line">		x.start();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">=====================================================</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.text.SimpleDateFormat;</span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DateThread</span> <span class="keyword">extends</span> <span class="title">Thread</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 通过正则式来设置输出的时间格式</span></span><br><span class="line">	SimpleDateFormat s = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy年MM月dd日  HH:mm:ss:SS"</span>);</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 重写run()方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">			String str = s.format(<span class="keyword">new</span> Date());</span><br><span class="line">			System.out.println(str);</span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				<span class="comment">// 间隔时间1秒</span></span><br><span class="line">				Thread.sleep(<span class="number">1000</span>);</span><br><span class="line">			&#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">				e.printStackTrace();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -327,11 +327,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/18/Hololens-Web通讯坑/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/10/18/初探Java-Ⅷ/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Hololens-Web通讯坑
+          [初探Java]--Ⅷ
         
       </div>
     </a>
@@ -481,11 +481,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Hololens踩得坑杂记</a>
+                <a href="javascript:void(0)" class="js-tag color3">Java的开始</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Java的开始</a>
+                <a href="javascript:void(0)" class="js-tag color4">Hololens踩的坑杂记</a>
               </li>
             
             <div class="clearfix"></div>

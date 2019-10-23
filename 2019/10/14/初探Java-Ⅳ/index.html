@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>[初探Java]--Ⅳ | WuLun_HexoBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第肆次作业  级数求和1 级数求和2 方程组求解 方程求解 异常处理  😜">
+  <meta name="description" content="第肆次作业  级数求和1 级数求和2 方程组求解 方程求解 异常处理  第四题对于当时我这个没有学过线代的文科咸鱼😕， 只能网上找代码😅">
 <meta name="keywords" content="Java的开始">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[初探Java]--Ⅳ">
 <meta property="og:url" content="http://yoursite.com/2019/10/14/初探Java-Ⅳ/index.html">
 <meta property="og:site_name" content="WuLun_HexoBlog">
-<meta property="og:description" content="第肆次作业  级数求和1 级数求和2 方程组求解 方程求解 异常处理  😜">
+<meta property="og:description" content="第肆次作业  级数求和1 级数求和2 方程组求解 方程求解 异常处理  第四题对于当时我这个没有学过线代的文科咸鱼😕， 只能网上找代码😅">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2019-10-14T03:45:02.635Z">
+<meta property="og:updated_time" content="2019-10-23T07:24:32.204Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[初探Java]--Ⅳ">
-<meta name="twitter:description" content="第肆次作业  级数求和1 级数求和2 方程组求解 方程求解 异常处理  😜">
+<meta name="twitter:description" content="第肆次作业  级数求和1 级数求和2 方程组求解 方程求解 异常处理  第四题对于当时我这个没有学过线代的文科咸鱼😕， 只能网上找代码😅">
   
     <link rel="alternative" href="/atom.xml" title="WuLun_HexoBlog" type="application/atom+xml">
   
@@ -197,7 +197,7 @@
 <li>方程求解</li>
 <li>异常处理</li>
 </ol>
-<p>😜</p>
+<p>第四题对于当时我这个没有学过线代的文科咸鱼😕， 只能网上找代码😅</p>
 <a id="more"></a>
 <h4 id="级数求和1"><a class="header-anchor" href="#级数求和1">¶¶</a>级数求和1</h4>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">计算级数之和: </span></span><br><span class="line"><span class="comment">   y=1-1/2+1/4-1/8+...+</span></span><br><span class="line"><span class="comment">                    (-1)^(n-1)/2^(n-1)。</span></span><br><span class="line"><span class="comment">这里的"^"表示乘方。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">jishu_1</span> </span>&#123;</span><br><span class="line">	<span class="comment">// y=1 - 1/2 + 1/4 - 1/8 +...+(-1)^(n-2)/2^(n-1)</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">double</span> y = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">double</span> t;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++) &#123;</span><br><span class="line"></span><br><span class="line">			t = Math.pow(-<span class="number">1</span>, i - <span class="number">1</span>) / Math.pow(<span class="number">2</span>, i - <span class="number">1</span>);</span><br><span class="line">			y += t;</span><br><span class="line"></span><br><span class="line">			System.out.println(y);</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">"finally = "</span> + y);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -478,11 +478,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Hololens踩得坑杂记</a>
+                <a href="javascript:void(0)" class="js-tag color3">Java的开始</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Java的开始</a>
+                <a href="javascript:void(0)" class="js-tag color4">Hololens踩的坑杂记</a>
               </li>
             
             <div class="clearfix"></div>
