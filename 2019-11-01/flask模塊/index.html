@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: Hololens踩的坑杂记 | WuLun_HexoBlog</title>
+  <title>flask模塊 | WuLun_HexoBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="文科摸鱼选手">
-<meta property="og:type" content="website">
-<meta property="og:title" content="WuLun_HexoBlog">
-<meta property="og:url" content="http://yoursite.com/tags/Hololens踩的坑杂记/index.html">
+  <meta name="description" content="本來這一部分應該是在 “Hololens-Web通讯坑” 裏面的，結果因爲我太菜了。不知道flask的使用，直到今天[19.11.1]，還沒有實現Unity到Flask之間的通訊。在尋找flask教程中我發現大部分教程我都看不懂…這也是我開這個的原因，記錄一下我這個小白的理解歷程吧 還有就是大部分教程都是囫圇吞棗？，并沒有實際性（根本性）的理解有的東西。有可能是人生苦短，能用就好吧QAQ 对于这篇">
+<meta name="keywords" content="Hololens踩的坑杂记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="flask模塊">
+<meta property="og:url" content="http://yoursite.com/2019-11-01/flask模塊/index.html">
 <meta property="og:site_name" content="WuLun_HexoBlog">
+<meta property="og:description" content="本來這一部分應該是在 “Hololens-Web通讯坑” 裏面的，結果因爲我太菜了。不知道flask的使用，直到今天[19.11.1]，還沒有實現Unity到Flask之間的通訊。在尋找flask教程中我發現大部分教程我都看不懂…這也是我開這個的原因，記錄一下我這個小白的理解歷程吧 還有就是大部分教程都是囫圇吞棗？，并沒有實際性（根本性）的理解有的東西。有可能是人生苦短，能用就好吧QAQ 对于这篇">
 <meta property="og:locale" content="zh-tw">
+<meta property="og:updated_time" content="2019-11-04T06:45:12.533Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WuLun_HexoBlog">
+<meta name="twitter:title" content="flask模塊">
+<meta name="twitter:description" content="本來這一部分應該是在 “Hololens-Web通讯坑” 裏面的，結果因爲我太菜了。不知道flask的使用，直到今天[19.11.1]，還沒有實現Unity到Flask之間的通訊。在尋找flask教程中我發現大部分教程我都看不懂…這也是我開這個的原因，記錄一下我這個小白的理解歷程吧 還有就是大部分教程都是囫圇吞棗？，并沒有實際性（根本性）的理解有的東西。有可能是人生苦短，能用就好吧QAQ 对于这篇">
   
     <link rel="alternative" href="/atom.xml" title="WuLun_HexoBlog" type="application/atom+xml">
   
@@ -165,36 +169,102 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-flask模塊" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      flask模塊
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019-11-01/flask模塊/" class="archive-article-date">
+
+        
+        <a href="/2019-11-01/flask模塊/" class="archive-article-date">
   	<time datetime="2019-11-01T12:57:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-01</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019-11-01/flask模塊/">flask模塊</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本來這一部分應該是在 “Hololens-Web通讯坑” 裏面的，結果因爲我太菜了。不知道flask的使用，直到今天[19.11.1]，還沒有實現Unity到Flask之間的通訊。在尋找flask教程中我發現大部分教程我都看不懂…這也是我開這個的原因，記錄一下我這個小白的理解歷程吧<br>
+還有就是大部分教程都是囫圇吞棗？，并沒有實際性（根本性）的理解有的東西。有可能是人生苦短，能用就好吧QAQ</p>
+<pre><code>对于这篇文章我想起来的话会继续完善的，因为我现在的能力完全不够把这篇结了。
+</code></pre>
+<p><code>至於開坑的我的基礎enmm，剛剛會用python，不會web，不懂前後端（反正就是一超級小白</code></p>
+<a id="more"></a>
+<h4 id="46-flask基本结构及mvc请求响应过程"><a class="header-anchor" href="#46-flask基本结构及mvc请求响应过程">¶¶</a>46—Flask基本结构及MVC请求响应过程</h4>
+<figure class="highlight 1c"><table><tr><td class="code"><pre><span class="line">Flask</span><br><span class="line">———</span><br><span class="line">  <span class="string">|</span></span><br><span class="line">  <span class="string">|-----static</span></span><br><span class="line">       （<span class="meta">&amp; CSS</span></span><br><span class="line">	      <span class="string">|——样式	html中添加link，增加css的路径,以使用</span></span><br><span class="line">	      ↓ [html]</span><br><span class="line">		   &lt;head&gt;</span><br><span class="line">		       &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">		       &lt;title&gt;Page—<span class="number">01</span>&lt;/title&gt;</span><br><span class="line">		       &lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"../static/css/css_01.css"</span>&gt;</span><br><span class="line">		   &lt;/head&gt;</span><br><span class="line">       （<span class="meta">&amp; image</span></span><br><span class="line">	      <span class="string">|——在html中调用图片（在body体里就好</span></span><br><span class="line">	      ↓ [html]</span><br><span class="line">		   &lt;body&gt;</span><br><span class="line">		       &lt;br&gt;添加图片</span><br><span class="line">		       &lt;img src=<span class="string">"/static/images/课表.png"</span> alt=<span class="string">"课表"</span>&gt;</span><br><span class="line">		   &lt;/body&gt;</span><br><span class="line">       （<span class="meta">&amp; js	</span></span><br><span class="line">	      <span class="string">|</span></span><br><span class="line">       （<span class="meta">&amp; XX</span></span><br><span class="line">	      <span class="string">|</span></span><br><span class="line">			</span><br><span class="line">  <span class="string">|-----template</span></span><br><span class="line">       （<span class="meta">&amp; html</span></span><br><span class="line">	      <span class="string">|——模板页  在html中使用更靈活的Python語法</span></span><br><span class="line">	      <span class="string">|实现简单的html  (双三引号可以实现</span></span><br><span class="line">	      ↓ [Python]</span><br><span class="line">		   @app.route('/login')</span><br><span class="line">		   def login():</span><br><span class="line">		       html = <span class="string">"""</span></span><br><span class="line">		         &lt;!DOCTYPE html&gt;</span><br><span class="line">		         &lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">		         &lt;head&gt;</span><br><span class="line">		             &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">		             &lt;title&gt;注册&lt;/title&gt;</span><br><span class="line">		         &lt;/head&gt;</span><br><span class="line">		         &lt;body&gt;</span><br><span class="line">		         &lt;h1&gt;......自己补充&lt;h1&gt;</span><br><span class="line">		         &lt;/body&gt;</span><br><span class="line">		         &lt;/html&gt;<span class="string">"""</span></span><br><span class="line">		       return html</span><br><span class="line"></span><br><span class="line">	      <span class="string">|使用flask模板語法——jinja2</span></span><br><span class="line">	      ↓ [Python]</span><br><span class="line">		   @app.route('/books/')</span><br><span class="line">		   def book_list():</span><br><span class="line">		       book = Book('古代汉语', <span class="number">100</span>, 'abc', 'XJTU')</span><br><span class="line">		       return render_template('Book-list.html', book=book)</span><br><span class="line">	      ↓ [html]</span><br><span class="line">		   &lt;body&gt;</span><br><span class="line">		   &lt;h1&gt;無論杂谈&lt;/h1&gt;</span><br><span class="line">		   &lt;ul&gt;</span><br><span class="line">		       &lt;li&gt;標題 &#123;&#123; book.title &#125;&#125;  &lt;/li&gt;</span><br><span class="line">		       &lt;li&gt;定價 &#123;&#123; book.price &#125;&#125; &lt;/li&gt;</span><br><span class="line">		       &lt;li&gt;作者 &#123;&#123; book.author &#125;&#125; &lt;/li&gt;</span><br><span class="line">			   &lt;li&gt;出版 &#123;&#123; book.publisher &#125;&#125; &lt;/li&gt;</span><br><span class="line">		   &lt;/ul&gt;</span><br><span class="line">		   &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">  <span class="string">|-----modle</span></span><br><span class="line">       （<span class="meta">&amp; xxx</span></span><br><span class="line">	      <span class="string">|——方法</span></span><br><span class="line">	      <span class="string">|</span></span><br></pre></td></tr></table></figure>
+<hr>
+<p>上面 html 示例的 jinjia2 <strong>扩展</strong></p>
+<figure class="highlight 1c"><table><tr><td class="code"><pre><span class="line"><span class="string">|   ↓ [Python]————这个就是视图函数,视图函数返回视图</span></span><br><span class="line">@app.route('/books/')</span><br><span class="line">def book_list():</span><br><span class="line">    books = &#123;</span><br><span class="line">        Book('古代汉语', <span class="number">39.99</span>￥, 'abc', 'XJTU'),</span><br><span class="line">        Book('唐宋诗词专题', <span class="number">20.00</span>￥, 'bca', 'XJTU'),</span><br><span class="line">        Book('文学概论', <span class="number">49.00</span>￥, 'cab', 'XJTU'),</span><br><span class="line">        Book('辞赋研究', <span class="number">40.00</span>￥, 'cba', 'XJTU'),</span><br><span class="line">        Book('钢琴表演艺术', <span class="number">10.00</span>￥, 'acb', 'XJTU')</span><br><span class="line">    &#125;</span><br><span class="line">    return render_template('Book-list.html', books=books)</span><br><span class="line"></span><br><span class="line"><span class="string">|   ↓ [html]</span></span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;h1&gt;無論杂谈&lt;/h1&gt;</span><br><span class="line">&lt;table border=<span class="string">"1"</span> cellpadding=<span class="string">"6"</span>&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;书名&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;定价&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;???&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;CBS&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &#123;% for book in books %&#125;</span><br><span class="line">        &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;&#123;&#123; book.title &#125;&#125;&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;&#123;&#123; book.price &#125;&#125;&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;&#123;&#123; book.author &#125;&#125;&lt;/td&gt;</span><br><span class="line">            &lt;td&gt;&#123;&#123; book.publisher &#125;&#125;&lt;/td&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">    &#123;% endfor %&#125;</span><br><span class="line">&lt;/table&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line"></span><br><span class="line"><span class="string">|此输出不定序？？？ 注意for循环的格式</span></span><br></pre></td></tr></table></figure>
+<h5 id="html的tip"><a class="header-anchor" href="#html的tip">¶¶</a><strong>html的tip</strong></h5>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="comment">&lt;!--ul&gt;</span></span>li*3(然后按下Tab键) 含义: 生成一对ul标签, 然后在这对ul标签中再生成3对li标签标签--&gt;</span><br><span class="line">tr&gt;td<span class="emphasis">*4   tr包括td*</span>4 然后Tab</span><br></pre></td></tr></table></figure>
+<h4 id="47-flask-request-请求对象"><a class="header-anchor" href="#47-flask-request-请求对象">¶¶</a>47-Flask Request 请求对象</h4>
+<p>请求给路由 路由决定合适的视图函数</p>
+<p>瀏覽器的request實現需要上下文環境 “app.test_request_context(’/xx/’)” ，一般瀏覽器幫我們做好了（瞭解就行</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">获取地址栏参数</span><br><span class="line">成員屬性</span><br><span class="line">	.path 請求路徑</span><br><span class="line">	.method 請求</span><br><span class="line">	.args.get(<span class="string">'key'</span>, <span class="string">'defaultkey'</span>)</span><br><span class="line">	...</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/rq/')</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_request</span><span class="params">()</span>:</span></span><br><span class="line">    path = request.path</span><br><span class="line">    method = request.method</span><br><span class="line">    name = request.args.get(<span class="string">'name'</span>, <span class="string">'未找到'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> path + <span class="string">'/'</span> + method + <span class="string">'/'</span> + name</span><br><span class="line">	</span><br><span class="line"><span class="comment">#在目标地址栏后面输入"/?name=Tom%26Jerry/" 或 ""/?name=Tom&amp;Jerry/""  涉及地址栏编码</span></span><br><span class="line"><span class="comment"># urllib.parse.quote('Tom&amp;Jerry')</span></span><br><span class="line"><span class="comment"># from urllib.parse import unquote   ——&gt;  name = unquote(request.args.get('name', '未找到'))</span></span><br></pre></td></tr></table></figure>
+<p>Python 调 库 方案✌  <strong>↑</strong><br>
+jinja2 过滤器方案✌  <strong>↓</strong></p>
+<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name">set</span> name = 'tom&amp;jerry#mike' %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml"><span class="meta">&lt;!DOCTYPE html&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span></span><br><span class="line"><span class="xml">...</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/rq/?name=</span></span></span><span class="template-variable">&#123;&#123; name|<span class="name">urlencode</span> &#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span>转跳至/rq/ 注意</span><span class="template-variable">&#123;&#123;&#125;&#125;</span><span class="xml">里面的东西就好<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<hr>
+<figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">&lt;<span class="keyword">form</span> action=<span class="string">""</span>&gt;</span><br><span class="line">    用户名：</span><br><span class="line">    &lt;<span class="keyword">input</span> <span class="keyword">type</span>=<span class="string">"text"</span> name=<span class="string">"username"</span> &gt;</span><br><span class="line">    &lt;<span class="keyword">br</span>&gt;密码：</span><br><span class="line">    &lt;<span class="keyword">input</span> <span class="keyword">type</span>=<span class="string">"password"</span> name=<span class="string">"pwd"</span> &gt;</span><br><span class="line">    &lt;<span class="keyword">input</span> <span class="keyword">type</span>=<span class="string">"submit"</span> value=<span class="string">"提交"</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">form</span>&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">form</span>表单默认地址提交给自己</span><br></pre></td></tr></table></figure>
+<p><a href="https://www.cnblogs.com/quzq/p/10318848.html" target="_blank" rel="noopener">Flask的响应及request属性整理</a></p>
+<h4 id="43-http-基础知识"><a class="header-anchor" href="#43-http-基础知识">¶¶</a>43-HTTP 基础知识</h4>
+<p>理解flask就要從 網絡協議 開始了，</p>
+<figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">ftp:</span><br><span class="line">http（+s 安全套接字）:</span><br><span class="line"><span class="keyword">file</span>:<span class="comment">///</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">CS</span>的軟件   [明顯的優勢（qq），直接安裝在客戶的機器上，訪問資源好訪問，缺點，客戶端要更新</span><br><span class="line">Client</span><br><span class="line">Server</span><br><span class="line"></span><br><span class="line"><span class="keyword">BS</span>結構的   [網頁版，不需要客戶更新（郵箱）</span><br><span class="line">Browser</span><br><span class="line">Server</span><br><span class="line"></span><br><span class="line">` flask php asp.<span class="keyword">net</span> jsp後臺? sever端 `</span><br></pre></td></tr></table></figure>
+<p>IPv4 協議<br>
+用域名解析</p>
+<figure class="highlight 1c"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"> HTTP</span><br><span class="line">———</span><br><span class="line">  <span class="string">|</span></span><br><span class="line">  <span class="string">|-----資源</span></span><br><span class="line">       （<span class="meta">&amp; URL——統一資源定位器</span></span><br><span class="line">            <span class="string">|——&#123;http:// 方案/架構</span></span><br><span class="line"> 			<span class="string">|	wulun0102.github.io  主域/主機（裸域</span></span><br><span class="line">			<span class="string">|	www. 域名下的一個分支</span></span><br><span class="line">			<span class="string">|					</span></span><br><span class="line">			<span class="string">|	id=3&amp;name=num 查詢字符串</span></span><br><span class="line">			<span class="string">|	#xxx （片段）標示頁面中的某一個錨點</span></span><br><span class="line">			<span class="string">|	URL編碼&#125;</span></span><br><span class="line">       （<span class="meta">&amp; 媒體和資源類型									</span></span><br><span class="line">			<span class="string">|	服務器上的後綴類型不可信，沒有一個絕對的關係？</span></span><br><span class="line">			<span class="string">|	内容協商機制——在網頁中解析的時候看'Network'看請求的相應（只能看是什麽</span></span><br><span class="line">			<span class="string">|	Content-Type(text/html、text/plain、application/json、...)</span></span><br><span class="line">  </span><br><span class="line">  <span class="string">|-----消息</span></span><br><span class="line">        （<span class="meta">&amp; Request</span></span><br><span class="line">	        ——原始請求</span><br><span class="line">			<span class="string">|   方法頭：GET 我向服務器要東西/用什麽協議要（HTTP）/版本1.1</span></span><br><span class="line">			<span class="string">|   host: www.wulun0102.github.io </span></span><br><span class="line">			——頭部（Header）</span><br><span class="line">			<span class="string">|   Referer    (瀏覽器信息，可以僞造</span></span><br><span class="line">			<span class="string">|	User-Agent（用戶代理 /瀏覽器</span></span><br><span class="line">			<span class="string">|   Accept     (期望接收的資源類型</span></span><br><span class="line">			<span class="string">|   Cookie</span></span><br><span class="line">			<span class="string">|   ...</span></span><br><span class="line">			——方法</span><br><span class="line">			<span class="string">|   GET 檢索資源(從地址欄傳？</span></span><br><span class="line">			<span class="string">|	POST  提交更新資源（從後臺悄悄傳？</span></span><br><span class="line">			<span class="string">|	PUT 儲存資源</span></span><br><span class="line">			<span class="string">|	DELETE 刪除資源</span></span><br><span class="line">			<span class="string">|	HEAD 檢索頭部資源（不要正文，要一些頭部信息</span></span><br><span class="line">		(<span class="meta">&amp; Response	</span></span><br><span class="line">		    ——基本格式</span><br><span class="line">			<span class="string">|   HTTP/1.1（版本） 200（服務器返回的狀態碼） OK（狀態的文本）</span></span><br><span class="line">			<span class="string">|   Headers [Cache-Control、Content-Type: text/html、Sever:Chrome、Connection、Content-Lengt、... ]</span></span><br><span class="line">			<span class="string">|   body</span></span><br><span class="line">		(<span class="meta">&amp; 狀態碼</span></span><br><span class="line">			——<span class="number">100</span>-<span class="number">199</span></span><br><span class="line">			<span class="string">|   一般是信息類的</span></span><br><span class="line">			——<span class="number">200</span>-<span class="number">299</span></span><br><span class="line">			<span class="string">|   成功</span></span><br><span class="line">			——<span class="number">300</span>-<span class="number">399</span></span><br><span class="line">			<span class="string">|   轉跳（臨時轉跳302和永傑轉跳301？</span></span><br><span class="line">			——<span class="number">400</span>-<span class="number">499</span></span><br><span class="line">			<span class="string">|   客戶端有問題（著名404</span></span><br><span class="line">			——<span class="number">500</span>-<span class="number">599</span></span><br><span class="line">			<span class="string">|   服務器錯誤</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">多點點Chrome裏面的檢查<span class="symbol">~~~看看</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"/abc/"</span> <span class="attr">method</span>=<span class="string">"GET"</span>&gt;</span></span><br><span class="line">    等著數據提交注冊<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    顯式的存在于 地址欄中<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    啓動預覽的話 在此(Pycharm裏面)頁面右鍵選 "Open in Browser"<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"username"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"Submit"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>親求(Request)和響應()之間 做了什麽事情</p>
+<p>服務器端flask 搞清楚 客戶端<strong>請求</strong>了什麽東西，有沒有什麽東西傳給服務器，我們該怎麽獲取。<br>
+獲取后給響應</p>
+<h5 id="jinja2简单语法"><a class="header-anchor" href="#jinja2简单语法">¶¶</a>jinja2简单语法</h5>
+<figure class="highlight clojure"><table><tr><td class="code"><pre><span class="line">&#123;&#123; 变量 &#125;&#125;</span><br><span class="line">&#123;%  语句  %&#125;</span><br><span class="line">&#123;#  注释  #&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h5 id="not-over"><a class="header-anchor" href="#not-over">¶¶</a>Not Over</h5>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              酩 茗，古同“酩”，酩酊
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>一起玩Pokemon吧！！！<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.jpg">
+                      <span class="reward-type">((*・∀・）ゞ→→</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/mwc.gif">
+                      <span class="reward-type">ԅ(¯﹃¯ԅ)</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -206,72 +276,119 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019-11-01/flask模塊/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019-10-19/Hololens-Web通讯坑/" class="archive-article-date">
-  	<time datetime="2019-10-18T19:43:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-18</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019-10-22/PyCharm常用设置/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PyCharm常用设置</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019-10-19/Hololens-Web通讯坑/">Hololens-Web通讯坑</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Hololens踩的坑杂记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/氪盐的路//" class="article-tag-list-link color5">氪盐的路</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/氪盐的路/日常搭环境//" class="article-tag-list-link color1">日常搭环境</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#46-flask基本结构及mvc请求响应过程"><span class="toc-number">1.</span> <span class="toc-text">¶¶46—Flask基本结构及MVC请求响应过程</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#html的tip"><span class="toc-number">1.1.</span> <span class="toc-text">¶¶html的tip</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#47-flask-request-请求对象"><span class="toc-number">2.</span> <span class="toc-text">¶¶47-Flask Request 请求对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#43-http-基础知识"><span class="toc-number">3.</span> <span class="toc-text">¶¶43-HTTP 基础知识</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#jinja2简单语法"><span class="toc-number">3.1.</span> <span class="toc-text">¶¶jinja2简单语法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#not-over"><span class="toc-number">3.2.</span> <span class="toc-text">¶¶Not Over</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -294,9 +411,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
