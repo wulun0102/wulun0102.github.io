@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>[初探Java]--Ⅴ | WuLun_HexoBlog</title>
+  <title>Event-Cameras 技术简述 | WuLun_HexoBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第五次作业  多项式计算 数组转换 字符统计 子串出现的次数 两个字符串中最长公共子串  这周的的题还是相当有趣的😜看看还是非常值得的🔆">
-<meta name="keywords" content="Java的开始">
+  <meta name="description" content="一个弃的好思路，原因是这东西的成本确实有点高,整理的东西我就懒得往上腾了 新世界的大门">
+<meta name="keywords" content="创新大赛">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[初探Java]--Ⅴ">
-<meta property="og:url" content="http://yoursite.com/2019-10-16/初探Java-Ⅴ/index.html">
+<meta property="og:title" content="Event-Cameras 技术简述">
+<meta property="og:url" content="http://yoursite.com/2019-12-22/Event-Cameras-技术简述/index.html">
 <meta property="og:site_name" content="WuLun_HexoBlog">
-<meta property="og:description" content="第五次作业  多项式计算 数组转换 字符统计 子串出现的次数 两个字符串中最长公共子串  这周的的题还是相当有趣的😜看看还是非常值得的🔆">
+<meta property="og:description" content="一个弃的好思路，原因是这东西的成本确实有点高,整理的东西我就懒得往上腾了 新世界的大门">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2019-10-25T15:19:33.345Z">
+<meta property="og:updated_time" content="2020-01-10T13:10:39.158Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[初探Java]--Ⅴ">
-<meta name="twitter:description" content="第五次作业  多项式计算 数组转换 字符统计 子串出现的次数 两个字符串中最长公共子串  这周的的题还是相当有趣的😜看看还是非常值得的🔆">
+<meta name="twitter:title" content="Event-Cameras 技术简述">
+<meta name="twitter:description" content="一个弃的好思路，原因是这东西的成本确实有点高,整理的东西我就懒得往上腾了 新世界的大门">
   
     <link rel="alternative" href="/atom.xml" title="WuLun_HexoBlog" type="application/atom+xml">
   
@@ -169,47 +169,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-初探Java-Ⅴ" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Event-Cameras-技术简述" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      [初探Java]--Ⅴ
+      Event-Cameras 技术简述
     </h1>
   
 
         
-        <a href="/2019-10-16/初探Java-Ⅴ/" class="archive-article-date">
-  	<time datetime="2019-10-15T23:43:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-15</time>
+        <a href="/2019-12-22/Event-Cameras-技术简述/" class="archive-article-date">
+  	<time datetime="2019-12-21T18:25:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-21</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>第五次作业</p>
-<ol>
-<li>多项式计算</li>
-<li><strong>数组转换</strong></li>
-<li><strong>字符统计</strong></li>
-<li><strong>子串出现的次数</strong></li>
-<li><strong>两个字符串中最长公共子串</strong></li>
-</ol>
-<p>这周的的题还是相当有趣的😜看看还是非常值得的🔆</p>
+        <p>一个弃的好思路，原因是这东西的成本确实有点高,整理的东西我就懒得往上腾了<br>
+<a href="https://github.com/uzh-rpg/event-based_vision_resources#survey_paper" target="_blank" rel="noopener">新世界的大门</a></p>
 <a id="more"></a>
-<h4 id="多项式计算"><a class="header-anchor" href="#多项式计算">¶¶</a>多项式计算</h4>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 多项式 </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 计算下列多项式的值。 pn=an*x^n+...+a1*x+a0</span></span><br><span class="line">		<span class="comment">//	 其中，"^"表示乘方。x、n以及ai（i=0,1,...,n-1）由键盘输入。</span></span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">double</span> sum = <span class="number">0</span>;</span><br><span class="line">		</span><br><span class="line">		Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">"请输入一个z"</span>);</span><br><span class="line">		<span class="keyword">int</span> max = sc.nextInt();</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">double</span> [] s = <span class="keyword">new</span> <span class="keyword">double</span> [max + <span class="number">1</span>];</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = max;i&gt;=<span class="number">0</span>; i--)&#123;</span><br><span class="line">			System.out.println(<span class="string">"请输入次数为"</span> + i +<span class="string">" 的项的系数 "</span> );</span><br><span class="line">			s[i] = sc.nextDouble();</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">"请输入x"</span>);</span><br><span class="line">		<span class="keyword">double</span> x = sc.nextDouble();</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= max ; i++)&#123;</span><br><span class="line">			</span><br><span class="line">			sum = sum + Math.pow(x, i) * s[i];</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		System.out.println(sum);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="数组转换"><a class="header-anchor" href="#数组转换">¶¶</a>数组转换</h4>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 数组转换 </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 有一个一维数组，根据输入的m和n，将其转换为m*n的二维数组</span></span><br><span class="line">        <span class="comment">//System.in.read(),BufferedReader</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		System.out.println(<span class="string">"请输入一个m"</span>);</span><br><span class="line">		<span class="keyword">int</span> m = sc.nextInt();<span class="comment">//m</span></span><br><span class="line"></span><br><span class="line">		System.out.println(<span class="string">"请输入一个n"</span>);</span><br><span class="line">		<span class="keyword">int</span> n = sc.nextInt();<span class="comment">// n</span></span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span>[] a = &#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>, <span class="number">192</span>, <span class="number">11</span>, <span class="number">22</span>, <span class="number">12</span>, <span class="number">56</span>, <span class="number">16</span> &#125;;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span>[][] b = <span class="keyword">new</span> <span class="keyword">int</span>[m][n];</span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="keyword">while</span> (i &lt; a.length) &#123;</span><br><span class="line"></span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; n; k++) &#123;</span><br><span class="line"></span><br><span class="line">					b[j][k] = a[i];</span><br><span class="line"></span><br><span class="line">					System.out.println(b[j][k] + <span class="string">"["</span> + j + <span class="string">" / "</span> + k + <span class="string">"]"</span>);</span><br><span class="line"></span><br><span class="line">					i++;</span><br><span class="line">				&#125;</span><br><span class="line">				j++;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; <span class="keyword">catch</span> (ArrayIndexOutOfBoundsException e) &#123;</span><br><span class="line">			<span class="keyword">if</span> (a.length &gt; (m * n)) &#123;</span><br><span class="line">				System.out.println(<span class="string">"   一维数组 过大  使  二维数组  越界  "</span>);</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				System.out.println(<span class="string">"   一维数组  元素个数  小于   二维数组容量  "</span>);</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="字符统计"><a class="header-anchor" href="#字符统计">¶¶</a>字符统计</h4>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.Map.Entry;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">import</span> java.util.Set;</span><br><span class="line"></span><br><span class="line"><span class="comment">//分别统计一个字符串中大写字母、小写字母、数字、 汉字以及其它字符的个数。 （这个不是很好）</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">text</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 创建键盘录入对象</span></span><br><span class="line"></span><br><span class="line">		Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line"></span><br><span class="line">		System.out.println(<span class="string">"请输入一个字符串："</span>);</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 接收字符串</span></span><br><span class="line">		String s = sc.nextLine();</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 将字符串转换成数组</span></span><br><span class="line">		<span class="keyword">char</span>[] ch = s.toCharArray();</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 创建Map集合</span></span><br><span class="line">		HashMap  &lt;Character, Integer&gt; hm = <span class="keyword">new</span> HashMap&lt;Character, Integer&gt;();</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 遍历字符数组</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; ch.length; i++) &#123;</span><br><span class="line"></span><br><span class="line">			<span class="comment">// 将数组中的字符作为键去查询map表</span></span><br><span class="line">			Integer value = hm.get(ch[i]);</span><br><span class="line"></span><br><span class="line">			<span class="comment">// 判断值是否为null</span></span><br><span class="line">			<span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">			<span class="keyword">if</span> (value != <span class="keyword">null</span>) &#123;</span><br><span class="line">				count = value;</span><br><span class="line">			&#125;</span><br><span class="line">			count++;</span><br><span class="line">			hm.put(ch[i], count);</span><br><span class="line">		&#125;</span><br><span class="line">	</span><br><span class="line">		<span class="comment">// 遍历集合</span></span><br><span class="line">		Set&lt;Entry&lt;Character, Integer&gt;&gt; entrys = hm.entrySet();</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (Entry&lt;Character, Integer&gt; entry : entrys) &#123;</span><br><span class="line"></span><br><span class="line">			Character key = entry.getKey();</span><br><span class="line"></span><br><span class="line">			Integer value = entry.getValue();</span><br><span class="line"></span><br><span class="line">			System.out.print(key + <span class="string">" ("</span> + value  +  <span class="string">") "</span>);</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="子串出现的次数"><a class="header-anchor" href="#子串出现的次数">¶¶</a>子串出现的次数</h4>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">import</span> java.util.regex.Matcher;</span><br><span class="line"><span class="keyword">import</span> java.util.regex.Pattern;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 正则表达式<span class="title">text_1</span> </span>&#123;</span><br><span class="line">	<span class="comment">// 输入一个字符串s，再输入另一个字符串t，在s中查找t出现的次数。</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		System.out.println(<span class="string">"输入想要匹配的字符 ：  "</span>);</span><br><span class="line">		String text = sc.nextLine();</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 输入正则表达式</span></span><br><span class="line">		System.out.println(<span class="string">"输入正则表达式Z：  "</span>);</span><br><span class="line">		String Z = sc.nextLine();</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 将正则表达式编译成正则对象</span></span><br><span class="line">		Pattern p = Pattern.compile(Z);</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 现在创建 matcher 对象</span></span><br><span class="line">		Matcher m = p.matcher(text);</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 将字符串与正则结合得到匹配器对象</span></span><br><span class="line">		<span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="keyword">while</span> (m.find()) &#123;</span><br><span class="line">				i++;</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println(m.group());</span><br><span class="line">		&#125; <span class="keyword">catch</span> (IllegalStateException e) &#123;</span><br><span class="line">			System.out.println(i + <span class="string">" 次后  字符串中再无   "</span> + Z + <span class="string">" 匹配"</span>);</span><br><span class="line">		&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">			System.out.println(Z + <span class="string">" 一共在 "</span> + text + <span class="string">" 出现  "</span> + i + <span class="string">"次"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="两个字符串中最长公共子串"><a class="header-anchor" href="#两个字符串中最长公共子串">¶¶</a>两个字符串中最长公共子串</h4>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 查找两个字符串中含有的最长字符数的公共子串。 </span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">find_subString</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> StringBuilder <span class="title">maxsubString</span><span class="params">(String str1, String str2)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 把字符串转成字符数组</span></span><br><span class="line">		<span class="keyword">char</span>[] arr1 = str1.toCharArray();</span><br><span class="line">		<span class="keyword">char</span>[] arr2 = str2.toCharArray();</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 把两个字符串分别以行和列组成一个二维矩阵</span></span><br><span class="line">		<span class="keyword">int</span>[][] temp = <span class="keyword">new</span> <span class="keyword">int</span>[arr1.length][arr2.length];</span><br><span class="line">		<span class="comment">// 存储最长公共子串长度</span></span><br><span class="line">		<span class="keyword">int</span> length = <span class="number">0</span>;</span><br><span class="line">		<span class="comment">// start表明最长公共子串的起始点，end表明最长公共子串的终止点</span></span><br><span class="line">		<span class="keyword">int</span> end = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span> start = <span class="number">0</span>;</span><br><span class="line">		<span class="comment">//// 初始化二维矩阵中的第一行</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr2.length; i++) &#123;</span><br><span class="line">			temp[<span class="number">0</span>][i] = (arr1[<span class="number">0</span>] == arr2[i]) ? <span class="number">1</span> : <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">// 初始化二维矩阵中的第一列</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; arr1.length; j++) &#123;</span><br><span class="line">			temp[j][<span class="number">0</span>] = (arr2[<span class="number">0</span>] == arr1[j]) ? <span class="number">1</span> : <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">// 嵌套for循环：比较二维矩阵中每个点对应行列字符中否相等，相等的话值设置为1，否则设置为0</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; arr1.length; i++) &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; arr2.length; j++) &#123;</span><br><span class="line">				<span class="keyword">if</span> (arr1[i] == arr2[j]) &#123;</span><br><span class="line">					temp[i][j] = temp[i - <span class="number">1</span>][j - <span class="number">1</span>] + <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">					<span class="keyword">if</span> (temp[i][j] &gt; length) &#123;</span><br><span class="line">						length = temp[i][j];</span><br><span class="line">						end = j;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125; <span class="keyword">else</span></span><br><span class="line">					temp[i][j] = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">// 求出最长公共子串的起始点</span></span><br><span class="line">		start = end - length + <span class="number">1</span>;</span><br><span class="line">		StringBuilder sub = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">		<span class="comment">// 通过查找出值为1的最长对角线就能找到最长公共子串</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = start; j &lt; end + <span class="number">1</span>; j++) &#123;</span><br><span class="line">			sub.append(arr2[j]);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span> sub;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		String aa = <span class="string">"abc123edf"</span>;</span><br><span class="line">		String bb = <span class="string">"bc123jg"</span>;</span><br><span class="line">		maxsubString(aa, bb);</span><br><span class="line">		System.out.println(maxsubString(aa, bb));</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//为了避免后续查找对角线长度的操作：</span></span><br><span class="line"><span class="comment">//可以先计算二维矩阵值的时候顺便计算出来当前最长的公共子串的长度；</span></span><br><span class="line"><span class="comment">//即：某个二维矩阵元素的值由item[i][j]=1演变为item[i][j]=1 +item[i-1][j-1]。</span></span><br></pre></td></tr></table></figure>
-<h5 id="over"><a class="header-anchor" href="#over">¶¶</a>Over</h5>
+<h1>伪-调研报告</h1>
+<h3 id="导论"><a class="header-anchor" href="#导论">¶¶</a>导论</h3>
+<p><a href="https://youtu.be/FKemf6Idkd0?t=67" target="_blank" rel="noopener">到目前为止</a>，视力是人类感知世界并与大脑一起学习新事物的主要感觉。近年来，这项技术已经引起了学术界和工业界的广泛关注。这是由于原型事件相机的可用性以及这些设备提供的优势，以解决当前基于标准帧的图像传感器（提供2D图像频闪同步序列）无法实现的问题。</p>
+<p>事件摄像机是异步传感器，在获取视觉信息的方式上发生了范式转变。这是因为它们是根据场景动态而不是与观看场景无关的时钟对光进行采样的。它们的优点是：很高的时间分辨率和较低的延迟（均为微秒级），很高的动态范围（140 dB与标准相机的60 dB对比）以及低功耗。但是，由于事件摄像机的工作方式与标准摄像机根本不同，因此异步测量每个像素的亮度变化（称为“ 事件 ”），而不是以恒定速率测量“绝对”亮度，因此需要新颖的方法来处理它们输出并释放他们的潜力。</p>
+<p>事件摄像机比其他传感方式更具优势的典型场景包括实时交互系统…</p>
+<h3 id="事件摄像机原理及优点"><a class="header-anchor" href="#事件摄像机原理及优点">¶¶</a>事件摄像机原理及优点</h3>
+<p>与以外部时钟（例如30 fps）指定的速率获取完整图像的标准相机相反，事件相机（例如动态视觉传感器（DVS ）对每个像素异步且独立地响应场景中的亮度变化。因此，事件摄影机的输出是数字“事件”或“尖峰”的可变数据速率序列，每个事件代表在特定时间5 处像素处的预定义大小的亮度（对数强度）4 的变化。这种编码的灵感来自生物视觉通路的尖峰特性。每个像素在每次发送事件时都会记录对数强度，并连续监视是否有足够的变化。</p>
 
       
 
@@ -254,28 +243,13 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Java的开始</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">创新大赛</a>
         		</li>
       		
 		</ul>
 	</div>
 
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/日常摸鱼//" class="article-tag-list-link color5">日常摸鱼</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/日常摸鱼/Java//" class="article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
 
@@ -325,7 +299,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019-10-16/初探Java-Ⅴ/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019-12-22/Event-Cameras-技术简述/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -339,18 +313,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019-10-16/初探Java-Ⅵ/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020-01-10/2020俺来了/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          [初探Java]--Ⅵ
+          2020俺来了
         
       </div>
     </a>
   
   
-    <a href="/2019-10-14/初探Java-Ⅳ/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">[初探Java]--Ⅳ</div>
+    <a href="/2019-12-03/11月忙碌过后的杂谈/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">11月忙碌过后的杂谈</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -377,7 +351,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#多项式计算"><span class="toc-number">1.</span> <span class="toc-text">¶¶多项式计算</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数组转换"><span class="toc-number">2.</span> <span class="toc-text">¶¶数组转换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#字符统计"><span class="toc-number">3.</span> <span class="toc-text">¶¶字符统计</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#子串出现的次数"><span class="toc-number">4.</span> <span class="toc-text">¶¶子串出现的次数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#两个字符串中最长公共子串"><span class="toc-number">5.</span> <span class="toc-text">¶¶两个字符串中最长公共子串</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#over"><span class="toc-number">5.1.</span> <span class="toc-text">¶¶Over</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-number">1.</span> <span class="toc-text">伪-调研报告</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#导论"><span class="toc-number">1.0.1.</span> <span class="toc-text">¶¶导论</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事件摄像机原理及优点"><span class="toc-number">1.0.2.</span> <span class="toc-text">¶¶事件摄像机原理及优点</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
