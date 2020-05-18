@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>[初探Java]--Ⅰ | WuLun_HexoBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一次作业  大数（n）阶乘 大数（n）的m次方 给朋友的贺卡 圆类  这些作业整理了有一段时间了，现在我电脑上也没有配Java了😜 如果有错，请指出~!😗">
+  <meta name="description" content="第一次作业  大数（n）阶乘 大数（n）的m次方 给朋友的贺卡 圆类  这些作业整理了有一段时间了，现在我电脑上也没有配Java了:stuck_out_tongue_winking_eye: 如果有错，请指出~!:kissing:">
 <meta name="keywords" content="Java的开始">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[初探Java]--Ⅰ">
 <meta property="og:url" content="http://yoursite.com/2019-10-12/初探Java-Ⅰ/index.html">
 <meta property="og:site_name" content="WuLun_HexoBlog">
-<meta property="og:description" content="第一次作业  大数（n）阶乘 大数（n）的m次方 给朋友的贺卡 圆类  这些作业整理了有一段时间了，现在我电脑上也没有配Java了😜 如果有错，请指出~!😗">
+<meta property="og:description" content="第一次作业  大数（n）阶乘 大数（n）的m次方 给朋友的贺卡 圆类  这些作业整理了有一段时间了，现在我电脑上也没有配Java了:stuck_out_tongue_winking_eye: 如果有错，请指出~!:kissing:">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2019-10-25T15:20:36.596Z">
+<meta property="og:updated_time" content="2020-05-18T08:26:32.408Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[初探Java]--Ⅰ">
-<meta name="twitter:description" content="第一次作业  大数（n）阶乘 大数（n）的m次方 给朋友的贺卡 圆类  这些作业整理了有一段时间了，现在我电脑上也没有配Java了😜 如果有错，请指出~!😗">
+<meta name="twitter:description" content="第一次作业  大数（n）阶乘 大数（n）的m次方 给朋友的贺卡 圆类  这些作业整理了有一段时间了，现在我电脑上也没有配Java了:stuck_out_tongue_winking_eye: 如果有错，请指出~!:kissing:">
   
     <link rel="alternative" href="/atom.xml" title="WuLun_HexoBlog" type="application/atom+xml">
   
@@ -196,18 +196,21 @@
 <li>给朋友的贺卡</li>
 <li>圆类</li>
 </ol>
-<p>这些作业整理了有一段时间了，现在我电脑上也没有配Java了😜<br>
-如果有错，请指出~!😗</p>
+<p>这些作业整理了有一段时间了，现在我电脑上也没有配Java了:stuck_out_tongue_winking_eye:
+如果有错，请指出~!:kissing:</p>
 <a id="more"></a>
-<h4 id="大数-n-阶乘"><a class="header-anchor" href="#大数-n-阶乘">¶¶</a>大数（n）阶乘</h4>
+<h4 id="大数-n-阶乘"><a class="header-anchor" href="#大数-n-阶乘"></a>大数（n）阶乘</h4>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.math.BigInteger;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">A</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		System.out.println(<span class="string">"请输入fx"</span>);</span><br><span class="line">		<span class="keyword">int</span> n = input.nextInt();</span><br><span class="line">		</span><br><span class="line">	    BigInteger sum = <span class="keyword">new</span> BigInteger (<span class="string">"0"</span>);</span><br><span class="line">	    BigInteger num = <span class="keyword">new</span> BigInteger (<span class="string">"1"</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i &lt;= n;i++)&#123;</span><br><span class="line">			BigInteger a = BigInteger.valueOf(i);</span><br><span class="line">			num=num.multiply(a);</span><br><span class="line">			sum=sum.add(num);</span><br><span class="line">			</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">"???======"</span>+num);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="大数-n-的m次方"><a class="header-anchor" href="#大数-n-的m次方">¶¶</a>大数（n）的m次方</h4>
+<h4 id="大数-n-的m次方"><a class="header-anchor" href="#大数-n-的m次方"></a>大数（n）的m次方</h4>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.math.BigInteger;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">work_A</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">		Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		System.out.println(<span class="string">"请输入n"</span>);</span><br><span class="line">		<span class="keyword">int</span> n = input.nextInt();</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">"请输入m"</span>);</span><br><span class="line">		<span class="keyword">int</span> m = input.nextInt();</span><br><span class="line">		</span><br><span class="line">		BigInteger N = BigInteger.valueOf(n);</span><br><span class="line">		BigInteger M = BigInteger.valueOf(m);</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		Object num = N.pow(m);</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		System.out.println(n+<span class="string">"的"</span>+m+<span class="string">"次方="</span>+num);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="给朋友的贺卡"><a class="header-anchor" href="#给朋友的贺卡">¶¶</a>给朋友的贺卡</h4>
+<h4 id="给朋友的贺卡"><a class="header-anchor" href="#给朋友的贺卡"></a>给朋友的贺卡</h4>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">work_B</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		System.out.println(<span class="string">"请输入自己的name"</span>);</span><br><span class="line">		String my = input.next();</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">"请输入朋友的name"</span>);</span><br><span class="line">		String friend = input.next();</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">"******************************\r\n"</span> + </span><br><span class="line">				 friend+<span class="string">",你好！\r\n"</span> + </span><br><span class="line">				<span class="string">"\r\n"</span> + </span><br><span class="line">				<span class="string">"        祝你学习愉快！\r\n"</span> + </span><br><span class="line">				<span class="string">"\r\n"</span> + </span><br><span class="line">				<span class="string">"             你的好朋友："</span>+my+<span class="string">"\r\n"</span> + </span><br><span class="line">				<span class="string">"               2019年02月28日\r\n"</span> + </span><br><span class="line">				<span class="string">"******************************"</span>);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="圆类"><a class="header-anchor" href="#圆类">¶¶</a>圆类</h4>
+<h4 id="圆类"><a class="header-anchor" href="#圆类"></a>圆类</h4>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">定义一个圆类，包括半径、构造方法、计算周长方法，</span></span><br><span class="line"><span class="comment">计算面积方法和显示半径方法。</span></span><br><span class="line"><span class="comment">然后编写一个主类，在其主方法中通过定义一个圆对象来</span></span><br><span class="line"><span class="comment">显示圆的半径、周长和面积。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">work_C</span> </span>&#123;</span><br><span class="line"> <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">double</span> <span class="title">calCircle</span><span class="params">(<span class="keyword">double</span> radius)</span> </span></span><br><span class="line"><span class="function"> </span>&#123; </span><br><span class="line">	<span class="keyword">double</span> area = <span class="number">3.1415926</span> * radius * radius; </span><br><span class="line">	<span class="keyword">double</span> Girth = <span class="number">3.1415926</span> * radius *<span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">	System.out.println(<span class="string">"圆的半径: "</span>+radius); </span><br><span class="line">	System.out.println(<span class="string">"圆的周长: "</span>+Girth);</span><br><span class="line">	System.out.println(<span class="string">"圆的面积: "</span>+area);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"> &#125;  		</span><br><span class="line"></span><br><span class="line"> <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span></span><br><span class="line"><span class="function"> </span>&#123;</span><br><span class="line">	<span class="keyword">double</span> radius; </span><br><span class="line">	<span class="keyword">double</span> area; </span><br><span class="line">	<span class="keyword">double</span> Girth;</span><br><span class="line"></span><br><span class="line">	Scanner input=<span class="keyword">new</span> Scanner(System.in); </span><br><span class="line">	System.out.println(<span class="string">"园的半径:"</span>); </span><br><span class="line">	radius=input.nextDouble(); </span><br><span class="line"></span><br><span class="line">	System.out.println(calCircle(radius)); </span><br><span class="line">	</span><br><span class="line"> &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h5 id="over"><a class="header-anchor" href="#over">¶¶</a>Over</h5>
+<br>
+<br>
+<hr>
+<p><font size="6" face="Times New Roman"><center><strong>Over</strong></center></font></p>
 
       
 
@@ -375,7 +378,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#大数-n-阶乘"><span class="toc-number">1.</span> <span class="toc-text">¶¶大数（n）阶乘</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#大数-n-的m次方"><span class="toc-number">2.</span> <span class="toc-text">¶¶大数（n）的m次方</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#给朋友的贺卡"><span class="toc-number">3.</span> <span class="toc-text">¶¶给朋友的贺卡</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#圆类"><span class="toc-number">4.</span> <span class="toc-text">¶¶圆类</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#over"><span class="toc-number">4.1.</span> <span class="toc-text">¶¶Over</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#大数-n-阶乘"><span class="toc-number">1.</span> <span class="toc-text">大数（n）阶乘</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#大数-n-的m次方"><span class="toc-number">2.</span> <span class="toc-text">大数（n）的m次方</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#给朋友的贺卡"><span class="toc-number">3.</span> <span class="toc-text">给朋友的贺卡</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#圆类"><span class="toc-number">4.</span> <span class="toc-text">圆类</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -487,11 +490,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">创新大赛</a>
+                <a href="javascript:void(0)" class="js-tag color2">腾飞杯——创新创业赛道</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">無論</a>
+                <a href="javascript:void(0)" class="js-tag color1">JetsonNano</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -499,15 +502,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hololens坑</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Java的开始</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Hololens踩的坑杂记</a>
+                <a href="javascript:void(0)" class="js-tag color5">踩坑杂记</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">踩坑杂记</a>
+                <a href="javascript:void(0)" class="js-tag color4">Unity收束线</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">無論</a>
               </li>
             
             <div class="clearfix"></div>

@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hololens-Web通讯坑 | WuLun_HexoBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今天又开了一个新坑：问题呢，就是学长之前没有交接的enmm😪真是十分令人开（tou）心（da）啊（💣） enmm在19.11.03初步结坑了，至少实现了Unity和Flask联动，但是还没有尝试部署。 至于更上一层的东西我也就在这个里面慢更吧，这样会系统/连贯一些，善用目录功能吧。 初始检索关键句：（后来倒是有点偏离了  简单的 Python+Flask+MysqL 的web建设技术 + SQ">
-<meta name="keywords" content="Hololens踩的坑杂记">
+  <meta name="description" content="今天又开了一个新坑：真是十分令人啊 开 心 tou da(～￣▽￣)～对于文章中功能的实现会放到前面，随缘一定程度上的追究原理文章的记录顺序大多都是我的一个接受历程的体现  19.11.03初步结坑，实现了Unity和Flask联动，但是还没有尝试部署。 20.02.10在实验室尝试部署无果后，怀疑是flask的问题，又开了SocketAsyncEventArgs的坑 20.03.23 flask">
+<meta name="keywords" content="Hololens坑">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hololens-Web通讯坑">
 <meta property="og:url" content="http://yoursite.com/2019-10-19/Hololens-Web通讯坑/index.html">
 <meta property="og:site_name" content="WuLun_HexoBlog">
-<meta property="og:description" content="今天又开了一个新坑：问题呢，就是学长之前没有交接的enmm😪真是十分令人开（tou）心（da）啊（💣） enmm在19.11.03初步结坑了，至少实现了Unity和Flask联动，但是还没有尝试部署。 至于更上一层的东西我也就在这个里面慢更吧，这样会系统/连贯一些，善用目录功能吧。 初始检索关键句：（后来倒是有点偏离了  简单的 Python+Flask+MysqL 的web建设技术 + SQ">
+<meta property="og:description" content="今天又开了一个新坑：真是十分令人啊 开 心 tou da(～￣▽￣)～对于文章中功能的实现会放到前面，随缘一定程度上的追究原理文章的记录顺序大多都是我的一个接受历程的体现  19.11.03初步结坑，实现了Unity和Flask联动，但是还没有尝试部署。 20.02.10在实验室尝试部署无果后，怀疑是flask的问题，又开了SocketAsyncEventArgs的坑 20.03.23 flask">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2019-11-04T06:45:05.052Z">
+<meta property="og:updated_time" content="2020-05-18T08:25:40.679Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hololens-Web通讯坑">
-<meta name="twitter:description" content="今天又开了一个新坑：问题呢，就是学长之前没有交接的enmm😪真是十分令人开（tou）心（da）啊（💣） enmm在19.11.03初步结坑了，至少实现了Unity和Flask联动，但是还没有尝试部署。 至于更上一层的东西我也就在这个里面慢更吧，这样会系统/连贯一些，善用目录功能吧。 初始检索关键句：（后来倒是有点偏离了  简单的 Python+Flask+MysqL 的web建设技术 + SQ">
+<meta name="twitter:description" content="今天又开了一个新坑：真是十分令人啊 开 心 tou da(～￣▽￣)～对于文章中功能的实现会放到前面，随缘一定程度上的追究原理文章的记录顺序大多都是我的一个接受历程的体现  19.11.03初步结坑，实现了Unity和Flask联动，但是还没有尝试部署。 20.02.10在实验室尝试部署无果后，怀疑是flask的问题，又开了SocketAsyncEventArgs的坑 20.03.23 flask">
   
     <link rel="alternative" href="/atom.xml" title="WuLun_HexoBlog" type="application/atom+xml">
   
@@ -189,22 +189,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天又开了一个新坑：问题呢，就是学长之前没有交接的enmm😪真是十分令人开（tou）心（da）啊（💣）<br>
-enmm在19.11.03初步结坑了，至少实现了Unity和Flask联动，但是还没有尝试部署。<br>
-至于更上一层的东西我也就在这个里面慢更吧，这样会系统/连贯一些，善用目录功能吧。</p>
-<p>初始检索关键句：（后来倒是有点偏离了</p>
+        <p>今天又开了一个新坑：真是十分令人啊 <ruby>开 心 <rt>tou da</rt></ruby><font size="2">(～￣▽￣)～<strong>对于文章中功能的实现会放到前面，随缘一定程度上的追究原理</strong>文章的记录顺序大多都是我的一个接受历程的体现</font></p>
 <ul>
-<li><s><a href="https://www.cnblogs.com/decadeyu/p/8145761.html?tdsourcetag=s_pctim_aiomsg" target="_blank" rel="noopener">简单的 Python+Flask+MysqL 的web建设技术</a> + SQLyog（辅助工具）</s></li>
-<li><a href="https://blog.csdn.net/kangkang13/article/details/79235039" target="_blank" rel="noopener">基于flask和docker技术的机器学习模型上线实现</a></li>
-<li><a href="https://www.cnblogs.com/CodeCabin/p/4181465.html?utm_source=tuicool&amp;utm_medium=referral" target="_blank" rel="noopener">Unity结合Flask实现排行榜功能</a></li>
+<li><code>19.11.03</code>初步结坑，实现了Unity和Flask联动，但是还没有尝试部署。</li>
+<li><code>20.02.10</code>在实验室尝试部署无果后，怀疑是flask的问题，又开了SocketAsyncEventArgs的坑</li>
+<li><code>20.03.23</code> flask 和 C#_Socket 模块都初步完成，等待真机部署 <font size="2">怀疑之前的通讯问题是没有开启HoloLens的功能</font></li>
 </ul>
-<p>前排提示👉会用到pip装不少包，有报错可以在本文底部找<strong>pip</strong>的<s>玄学</s>解决方案</p>
 <a id="more"></a>
-<p><strong>在这篇文章中我会将实现放到前面，至于一定程度上的追究原理，会在文章中部，使用目录寻找即可</strong>文章的记录顺序大多都是我的一个接受历程的体现</p>
-<h4 id="flask-与-unity-的联动"><a class="header-anchor" href="#flask-与-unity-的联动">¶¶</a>Flask 与 Unity 的联动</h4>
-<p>初步实现这个并不需要使用过多的扩展，只需要搞清其中的一些概念即可；</p>
+<hr>
+<br>
+<p><font size="6" color="Orange">前排提示</font></p>
+<p><font size="2">会用到 <a href="#pip1" id="pip1ref"><font size="4">pip</font></a> 装不少包，有报错可以在本文底部找<code>pip</code>的<s>玄学</s>解决方案</font></p>
+<h2 id="font-face-times-new-roman-flask-与-unity-的联动-font"><a class="header-anchor" href="#font-face-times-new-roman-flask-与-unity-的联动-font"></a><font face="Times New Roman">Flask 与 Unity 的联动</font></h2>
+<p>只需要搞清其中的一些概念，即可初步实现；</p>
 <ul>
-<li>了解flask路由
+<li><code>了解flask路由</code>
 <ul>
 <li>了解 “POST” 以及 “GET” 的定义以及传输方式</li>
 <li>使用flask的<strong>request</strong></li>
@@ -212,39 +211,48 @@ enmm在19.11.03初步结坑了，至少实现了Unity和Flask联动，但是还�
 <li>HTML中的form表单  (<a href="https://www.cnblogs.com/quangan/p/9310006.html" target="_blank" rel="noopener">html的简单语法</a></li>
 </ul>
 </li>
-<li>使用Unity的 “<strong>WWWForm</strong>” 和 “<strong>UnityWebRequest</strong>”</li>
 </ul>
-<p>↓↓↓</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">[python↓]</span><br><span class="line"><span class="comment"># 在初始flask代码中添加以下路由</span></span><br><span class="line">rqs = []</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/rq/', methods=['GET', 'POST'])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_request</span><span class="params">()</span>:</span></span><br><span class="line">    path = request.path</span><br><span class="line">    method = request.method</span><br><span class="line">    name = request.args.get(<span class="string">'name'</span>, <span class="string">'未找到'</span>)</span><br><span class="line">    rqs.append(request.form)</span><br><span class="line">    <span class="comment"># return path + '/' + method + '/' + name</span></span><br><span class="line">    <span class="keyword">return</span> render_template(<span class="string">'reg.html'</span>, rqs=rqs)</span><br><span class="line"></span><br><span class="line"><span class="comment">#但是这样的实现是并不好的，因为rqs.append()只需要在"methods = ["POST"]"的时候调用，以后自己可以适当的增加判断条件</span></span><br><span class="line"><span class="comment">#在这里你可以发现，视图函数会在每次请求的时候调用</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">[html↓   reg.html]</span><br><span class="line"></span><br><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>注册<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>用户注册<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"/rq/"</span> <span class="attr">method</span>=<span class="string">"post"</span>&gt;</span></span><br><span class="line">    用户名：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"username"</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span>密码：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"pwd"</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"提交"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>&#123;&#123; rqs &#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span> h1中的语法使用了jinja2的模板语法！ <span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line">[<span class="meta">C#↓   Json_Test.cs</span>]</span><br><span class="line"><span class="comment">//别忘了把这个绑定到物体上enm</span></span><br><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> UnityEngine.Networking;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Json_Test</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// Start is called before the first frame update</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        StartCoroutine(Upload());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function">IEnumerator <span class="title">Upload</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        WWWForm form = <span class="keyword">new</span> WWWForm();</span><br><span class="line">        form.AddField(<span class="string">"key"</span>, <span class="string">"value"</span>);</span><br><span class="line">        form.AddField(<span class="string">"abc"</span>, <span class="string">"123"</span>);</span><br><span class="line">		</span><br><span class="line">        UnityWebRequest request = UnityWebRequest.Post(<span class="string">"http://127.0.0.1:5000/rq/"</span>, form);</span><br><span class="line">        <span class="keyword">yield</span> <span class="keyword">return</span> request.SendWebRequest();</span><br><span class="line">        Debug.Log(request.error);</span><br><span class="line">        Debug.Log(request.responseCode);</span><br><span class="line">        Debug.Log(request.downloadHandler.text);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><a href="https://blog.csdn.net/qq_34818497/article/details/93897480" target="_blank" rel="noopener">UnityWebRequest</a>   /   <a href="https://blog.csdn.net/star__119/article/details/82804201" target="_blank" rel="noopener">另</a><br>
-<a href="https://docs.unity3d.com/ScriptReference/WWWForm.html" target="_blank" rel="noopener">WWWForm</a></p>
-<h4 id="flask"><a class="header-anchor" href="#flask">¶¶</a>Flask</h4>
-<p>这个东西我现在也不是很清楚，開始的時候pip各种奇怪报错。然后搜教程的时候带上了&quot;Anaconda&quot;关键字🙈。其实到现在我沒有理和我Anaconda的環境有什么关系。<strong>后来我给Flask专门开了一篇post，环境初步熟悉以后可以去康康</strong></p>
-<p>至于PIP的版本更新失败问题，网上的教程很多但是重复。会浪费不少时间的~可以直接看<strong>文章底部</strong>的部分解决方案<br>
-先贴一个 <code>easy_install pip</code> 我是用<a href="https://www.cnblogs.com/z-x-y/p/9237706.html" target="_blank" rel="noopener">这个</a>解决了配置问题👀</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br><span class="line">pip install flask-sqlalchemy pymysql</span><br><span class="line"></span><br><span class="line">pip install flask-script      <span class="comment"># Requirement already satisfied: ......</span></span><br><span class="line">pip install flask-sqlalchemy  <span class="comment"># Successfully installed SQLAlchemy-1.3.10 flask-sqlalchemy-2.4.1</span></span><br><span class="line">pip install flask-migrate     <span class="comment"># Successfully installed Mako-1.1.0 alembic-1.2.1 python-dateutil-2.8.0 python-editor-1.0.4</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># flask-script 可以自定义命令行命令，用来启动程序或其它任务；</span></span><br><span class="line"><span class="comment"># flask-sqlalchemy 用来管理数据库的工具，支持多种数据库后台；</span></span><br><span class="line"><span class="comment"># flask-migrate 是数据库迁移工具，该工具命令集成到 flask-script 中，方便在命令行中进行操作</span></span><br></pre></td></tr></table></figure>
-<pre><code>PyCharm專業版自帶的模板中，Flask的一些功能寫在了一起，但實際上可以通過一些插件將其進行拆分，使得Flask具有更輕鬆的可維護性:warning:
-</code></pre>
+<center><font size="5">Unity联动Flask 实 现</font></center>
 <ul>
-<li>Project的初始目錄有 ‘static’ / ‘templates’ / ‘app .py’
-<ul>
-<li>static中放置的静态文件主要包含<strong>CSS样式文件</strong>、<strong>js脚本</strong>、图片和字体等</li>
-<li>templates中放置<strong>html格式網頁</strong>（<em>模板文件</em>）</li>
-<li>app.py中包含了 ‘<strong>應用程序實例</strong>’、 ‘<strong>路由和视图函数</strong>’、 ‘<strong>服务启动</strong>’</li>
+<li>使用Unity的 <strong><code>WWWForm</code></strong> <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> 和 <strong><code>UnityWebRequest</code></strong> <sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></li>
 </ul>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#不要在意我的代碼格式enmm</span></span><br><span class="line">Flask初始模板：</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask </span><br><span class="line">app = Flask(__name__)</span><br><span class="line"><span class="comment"># 上面這兩行代碼為 Flask應用 都必須創建的一個'應用程序實例'—Flask类的一个对象， 使用web服务器网关接口协议将所有从客户端接收的请求传递给这个对象处理。</span></span><br><span class="line"><span class="comment"># Flask类构造函数唯一需要的参数就是应用程序的主模块或包。 注：对于Flask开发者来说，传给Flask应用程序构造函数的name参数是比较容易弄混淆的。Flask使用这个参数来确定应用程序的根目录，这样以后可以相对这个路径来找到资源文件。</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/')</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello_world</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Hello World!'</span></span><br><span class="line"><span class="comment"># Flask應用程序中定义(申明)路由的最便捷的方式是通过显示定义在应用程序實例之上的 'app'.route 装饰器，注册被装饰的函数来作为一个'路由' ;应用程序实例需要知道对于各个URL请求需要运行哪些代码，所以它给Python函数建立了一个URLs映射。这些在URL和函数之间建立联系的操作被称之为'路由'</span></span><br><span class="line"><span class="comment"># 例如'def hello_world():'的函數被稱之爲'視圖函數'，通过视图返回的响应可以是简单的，但它也可以市更复杂的形式（確信！引用templates中的html文檔/添加动态名称组件 什麽的）  注：装饰器是Python语言的标准特性；它们可以以不同方式改变函数的行为。一个常见的模式是使用装饰器来注册函数作为一个事件处理程序。</span></span><br><span class="line"><span class="comment"># Flask路由支持int、float和path。path同样是字符串类型，但并不认为斜杠是分隔符，而认为它们是动态组件的一部分。</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    app.run()</span><br><span class="line"><span class="comment"># run方法用于启动Flask集成的web服务， __name__ == '__main__'在此处使用是用于确保web服务已经启动当脚本被立即执行。当脚本被另一个脚本导入，它被看做父脚本将启动不同的服务，所以app.run()调用会被跳过</span></span><br><span class="line"><span class="comment"># 服務啓動后的这个循环（響應）持续到应用程序停止，例如通过按下Ctrl-C停止；有几个选项参数可以给app.run()配置web服务的操作模式。在开发期间，可以很方便的开启debug模式，将激活 debugger 和 reloader ，这样做是通过传递debug为True来实现的。</span></span><br></pre></td></tr></table></figure>
-<p><a href="https://www.cnblogs.com/decadeyu/p/8145761.html?tdsourcetag=s_pctim_aiomsg" target="_blank" rel="noopener">參考</a><br>
-<a href="https://blog.csdn.net/yyyqqq00/article/details/89115837" target="_blank" rel="noopener">史上最简单的 Python Flask 框架搭建</a></p>
-<h5 id="flask-script"><a class="header-anchor" href="#flask-script">¶¶</a>Flask Script</h5>
-<p>Flask-Script 扩展提供向Flask插入外部脚本的功能，包括运行一个开发用的服务器，一个定制的Python shell，设置数据库的脚本，cronjobs，及其他运行在web应用之外的命令行任务；使得脚本和系统分开；<br>
-Flask-Script 和 Flask 本身的工作方式类似，只需定义和添加从命令行中被Manager实例调用的命令；</p>
-<p>這個就是拆分初始Flask的開始</p>
-<h5 id="flask-sqlalchemy"><a class="header-anchor" href="#flask-sqlalchemy">¶¶</a>Flask SQLAlchemy</h5>
-<h5 id="pycharm-flask"><a class="header-anchor" href="#pycharm-flask">¶¶</a>Pycharm + flask</h5>
+<blockquote>
+<p>[python flask↓]</p>
+<blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在初始flask代码中添加以下路由</span></span><br><span class="line">rqs = []</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/rq/', methods=['GET', 'POST'])</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_request</span><span class="params">()</span>:</span></span><br><span class="line">    path = request.path</span><br><span class="line">    method = request.method</span><br><span class="line">    name = request.args.get(<span class="string">'name'</span>, <span class="string">'未找到'</span>)</span><br><span class="line">    rqs.append(request.form)</span><br><span class="line"> <span class="comment"># return path + '/' + method + '/' + name</span></span><br><span class="line">    <span class="keyword">return</span> render_template(<span class="string">'reg.html'</span>, rqs=rqs)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p><font size="2">但是这样的实现并不理想，因为rqs.append()只需要在触发&quot;methods = [“POST”]&quot;的时候调用，以后自己可以适当的增加判断条件 <br>
+在这里你可以发现，视图函数会在每次请求的时候调用</font></p>
+</blockquote>
+<blockquote>
+<p>[html↓   reg.html]</p>
+<blockquote>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>注册<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>用户注册<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"/rq/"</span> <span class="attr">method</span>=<span class="string">"post"</span>&gt;</span></span><br><span class="line">    用户名：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"username"</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span>密码：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"pwd"</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"提交"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span> h1中的语法使用了jinja2的模板语法！ <span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>[C#↓   Json_Test.cs]</p>
+<blockquote>
+<figure class="highlight c"><figcaption><span>#</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">//别忘了把这个绑定到物体上enm</span></span><br><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> UnityEngine.Networking;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Json_Test</span> :</span> MonoBehaviour</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// Start is called before the first frame update</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        StartCoroutine(Upload());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function">IEnumerator <span class="title">Upload</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        WWWForm form = <span class="keyword">new</span> WWWForm();</span><br><span class="line">        form.AddField(<span class="string">"key"</span>, <span class="string">"value"</span>);</span><br><span class="line">        form.AddField(<span class="string">"abc"</span>, <span class="string">"123"</span>);</span><br><span class="line">		</span><br><span class="line">        UnityWebRequest request = UnityWebRequest.Post(<span class="string">"http://127.0.0.1:5000/rq/"</span>, form);</span><br><span class="line">        yield <span class="keyword">return</span> request.SendWebRequest();</span><br><span class="line">        Debug.Log(request.error);</span><br><span class="line">        Debug.Log(request.responseCode);</span><br><span class="line">        Debug.Log(request.downloadHandler.text);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+</blockquote>
+<hr>
+<h2 id="flask"><a class="header-anchor" href="#flask"></a>Flask</h2>
+<p>flask是个对新手不太友好的东西（￣︶￣）↗<sub>这话不是我说的</sub>，開始的時候pip各种奇怪报错。然后蠢到带&quot;Anaconda&quot;关键字搜教程。后来给<a href="/2019-11-01/flask%E6%A8%A1%E5%A1%8A/">Flask</a>专门开了一篇post</p>
+<br>
+<center><font size="5">环境配置</font></center>
+<p>至于PIP的版本更新失败问题，网上的教程很多但是重复。可以直接看<font size="4"><a href="#pip1">pip</a></font>部分解决一下问题。先贴一个 <a href="https://www.cnblogs.com/z-x-y/p/9237706.html" target="_blank" rel="noopener"><code>easy_install pip</code></a> 玄学一下</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br><span class="line">pip install flask-sqlalchemy pymysql</span><br><span class="line"></span><br><span class="line">pip install flask-script      <span class="comment"># Requirement already satisfied: ......</span></span><br><span class="line">pip install flask-sqlalchemy  <span class="comment"># SQLAlchemy-1.3.10 flask-sqlalchemy-2.4.1</span></span><br><span class="line">pip install flask-migrate     </span><br><span class="line"><span class="comment"># Mako-1.1.0 alembic-1.2.1 python-dateutil-2.8.0 python-editor-1.0.4</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><font size="2">flask-script 可以自定义命令行命令，用来启动程序或其它任务；<br>
+flask-sqlalchemy 用来管理数据库的工具，支持多种数据库后台；<br>
+flask-migrate 是数据库迁移工具，该工具命令集成到 flask-script 中，方便在命令行中进行操作</font></p>
+</blockquote>
+<br>
+<center><font size="5">Pycharm + flask杂谈</font></center>
+<blockquote>
+<p><font size="2">PyCharm專業版自帶的模板中，Flask的一些功能寫在了一起，但實際上可以通過一些插件將其進行拆分，使得Flask具有更輕鬆的可維護性</font>（￣︶￣）↗</p>
+</blockquote>
 <p><code>推荐在PyCharm新建项目的时候，勾选 inherit global site-package 这个是可以的，但是有没有什么其他隐患并不清楚</code></p>
 <ul>
 <li>要是没有勾选
@@ -253,14 +261,65 @@ Flask-Script 和 Flask 本身的工作方式类似，只需定义和添加从命
 </ul>
 </li>
 </ul>
-<p>这里提示的就是即使你在cmd更新了Pip的版本，在你查询Pycharm的所配置的Python环境时候也不会自己适配。在你查询的时候会发现还是老版本的，而且你的第三方依赖库似乎也要重新下</p>
+<p>这里提示的就是即使你在cmd更新了Pip的版本，在你查询Pycharm的所配置的Python环境时候也不会自己适配（杜绝包污染的虚拟环境），在你查询的时候会发现还是老版本的。</p>
 <p>这是我在实现 flask-demo 时遇到的第一个莫名其妙的坑（原因是对于pycharm的太不熟悉,所以将它记录下来），在此也感谢我的室友/笑哭。</p>
-<pre><code>依次打开： File --&gt; Settings --&gt; Progect:'项目名' --&gt; Project Interpreter
-</code></pre>
-<figure class="highlight crystal"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用Pycharm的Terminal（在输出台那边）</span></span><br><span class="line"><span class="comment"># 使用命令在你pycharm里的Terminal或者在cmd里cd到工程scipts路径更新就好~（现在来看是没有什么问题的</span></span><br><span class="line">(flask_test) <span class="symbol">J:</span>\Pycharm_QAQ\Pycharm_environment\Scripts&gt;pip install --upgrade pip</span><br><span class="line">Requirement already up-to-<span class="symbol">date:</span> pip in <span class="symbol">j:</span>\pycharm_qaq\pycharm_environment\<span class="class"><span class="keyword">lib</span>\<span class="title">site</span>-<span class="title">packages</span> (19.3.1)</span></span><br></pre></td></tr></table></figure>
-<p>如上面所示，pycharm的环境或许本身就与自己自定义安装的Python的环境并<a href="https://blog.csdn.net/carroll_/article/details/90345180" target="_blank" rel="noopener">不互通</a>。<br>
-So，<code>有同学推荐了在PyCharm新建项目的时候，勾选 inherit global site-package 这个是可以的</code></p>
-<h5 id="杂"><a class="header-anchor" href="#杂">¶¶</a>杂</h5>
+<p>依次打开： <code>File --&gt; Settings --&gt; Progect:'项目名' --&gt; Project Interpreter</code></p>
+<blockquote>
+<p>在Pycharm的Terminal（在输出台那边）
+用命令在你pycharm里的Terminal或者在cmd里cd到工程scipts路径更新就好~</p>
+<blockquote>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">(flask_test) J:\Pycharm_QAQ\Pycharm_environment\Scripts&gt;pip install --upgrade pip</span><br><span class="line">Requirement already up-to-<span class="built_in">date</span>: pip <span class="keyword">in</span> j:\pycharm_qaq\pycharm_environment\lib\site-packages (<span class="number">19</span>.<span class="number">3</span>.<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+</blockquote>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">（现在来看是没有什么问题的</span></span><br></pre></td></tr></table></figure>
+<p>如上面所示，pycharm的环境或许本身就与自己自定义安装的Python的环境并<a href="https://blog.csdn.net/carroll_/article/details/90345180" target="_blank" rel="noopener">不互通</a>。</p>
+<p>So，<code>有同学推荐了在PyCharm新建项目的时候，勾选 inherit global site-package 这个是可以的</code></p>
+<br>
+<center><font size="5">新建flask项目</font></center>
+<ul>
+<li>Project的初始目錄有 ‘static’ / ‘templates’ / ‘app .py’
+<ul>
+<li><code>static</code>中放置的静态文件主要包含<strong>CSS样式文件</strong>、<strong>js脚本</strong>、图片和字体等</li>
+<li><code>templates</code>中放置<strong>html格式網頁</strong>（<em>模板文件</em>）</li>
+<li><code>app.py</code>中有 ‘<strong>應用程序實例</strong>’、 ‘<strong>路由和视图函数</strong>’、 ‘<strong>服务启动</strong>’</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Flask初始模板：</p>
+<blockquote>
+<blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask </span><br><span class="line"></span><br><span class="line">app = Flask(__name__)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p><font size="2">上面這兩行代碼為 Flask應用 都必須創建的一個’應用程序實例’—Flask类的一个对象， 使用web服务器网关接口协议将所有从客户端接收的请求传递给这个对象处理。<br>
+Flask类构造函数唯一需要的参数就是应用程序的主模块或包。 <br>注：对于Flask开发者来说，传给Flask应用程序构造函数的name参数是比较容易弄混淆的。Flask使用这个参数来确定应用程序的根目录，这样以后可以相对这个路径来找到资源文件。</font></p>
+</blockquote>
+<blockquote>
+<blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@app.route('/')</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello_world</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Hello World!'</span></span><br></pre></td></tr></table></figure>
+</blockquote>
+<p><font size="2">Flask應用程序中定义(申明)路由的最便捷的方式是通过显示定义在应用程序實例之上的 ‘app’.route 装饰器，注册被装饰的函数来作为一个’路由’ ;应用程序实例需要知道对于各个URL请求需要运行哪些代码，所以它给Python函数建立了一个URLs映射。这些在URL和函数之间建立联系的操作被称之为’路由’<br>
+例如’def hello_world():‘的函數被稱之爲’視圖函數’，通过视图返回的响应可以是简单的，但它也可以市更复杂的形式（確信！引用templates中的html文檔/添加动态名称组件 什麽的）  注：装饰器是Python语言的标准特性；它们可以以不同方式改变函数的行为。一个常见的模式是使用装饰器来注册函数作为一个事件处理程序。<br> Flask路由支持int、float和path。path同样是字符串类型，但并不认为斜杠是分隔符，而认为它们是动态组件的一部分。</font></p>
+</blockquote>
+<blockquote>
+<blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    app.run()</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p><font size="2">run方法用于启动Flask集成的web服务， <strong>name</strong> == '<strong>main</strong>’在此处使用是用于确保web服务已经启动当脚本被立即执行。当脚本被另一个脚本导入，它被看做父脚本将启动不同的服务，所以app.run()调用会被跳过<br> 服務啓動后的这个循环（響應）持续到应用程序停止，例如通过按下Ctrl-C停止；有几个选项参数可以给app.run()配置web服务的操作模式。在开发期间，可以很方便的开启debug模式，将激活 debugger 和 reloader ，这样做是通过传递debug为True来实现的。</font></p>
+</blockquote>
+</blockquote>
+<p><a href="https://www.cnblogs.com/decadeyu/p/8145761.html?tdsourcetag=s_pctim_aiomsg" target="_blank" rel="noopener">參考</a>
+<a href="https://blog.csdn.net/yyyqqq00/article/details/89115837" target="_blank" rel="noopener">史上最简单的 Python Flask 框架搭建</a></p>
+<hr>
+<h3 id="flask-script"><a class="header-anchor" href="#flask-script"></a>Flask Script</h3>
+<p>Flask-Script 扩展提供向Flask插入外部脚本的功能，包括运行一个开发用的服务器，一个定制的Python shell，设置数据库的脚本，cronjobs，及其他运行在web应用之外的命令行任务；使得脚本和系统分开；
+Flask-Script 和 Flask 本身的工作方式类似，只需定义和添加从命令行中被Manager实例调用的命令；</p>
+<p>這個就是拆分初始Flask的開始</p>
+<hr>
+<h3 id="flask-sqlalchemy"><a class="header-anchor" href="#flask-sqlalchemy"></a>Flask SQLAlchemy</h3>
+<p><a href="https://www.haowuliaoa.com/article/info/452401.html" target="_blank" rel="noopener"><code>Flask_SQLAlchemy</code></a>：在Flask应用中使用数据库</p>
+<hr>
+<h3 id="杂"><a class="header-anchor" href="#杂"></a>杂</h3>
 <p><a href="https://www.bilibili.com/video/av67507215/?p=4" target="_blank" rel="noopener">路由的管理</a></p>
 <ul>
 <li>使用时容易出现循环引用问题</li>
@@ -281,30 +340,32 @@ So，<code>有同学推荐了在PyCharm新建项目的时候，勾选 inherit gl
 </ul>
 </li>
 </ul>
-<h4 id="sql"><a class="header-anchor" href="#sql">¶¶</a>SQL</h4>
-<p>因为UWP里面能用这四种<a href="https://docs.microsoft.com/en-us/windows/uwp/data-access/sqlite-databases" target="_blank" rel="noopener">DataTable</a>，但仍會在部署UWP的时候报错<br>
+<hr>
+<h2 id="sql"><a class="header-anchor" href="#sql"></a>SQL</h2>
+<p>因为UWP里面能用这四种<a href="https://docs.microsoft.com/en-us/windows/uwp/data-access/sqlite-databases" target="_blank" rel="noopener">DataTable</a>，但仍會在部署UWP的时候报错
 <code>The type or namespace name 'DataTable' could not be found (are you missing a using directive or an assembly reference?</code></p>
-<h5 id="mysql-8-0-17-弃"><a class="header-anchor" href="#mysql-8-0-17-弃">¶¶</a><s>MySQL（8.0.17）</s>（弃）</h5>
-<p>在捣鼓了两天之后，放弃了MySQL(不要下<code>mysql-installer-web-community</code>这个安装包，因为后续我在配环境的时候会经常性的找不到教程，要是你不介意到无所谓<br>
+<h3 id="mysql-8-0-17-弃"><a class="header-anchor" href="#mysql-8-0-17-弃"></a><s>MySQL（8.0.17）</s>（弃）</h3>
+<p>在捣鼓了两天之后，放弃了MySQL(不要下<code>mysql-installer-web-community</code>这个安装包，因为后续我在配环境的时候会经常性的找不到教程，要是你不介意到无所谓
 以下是我在最开始踩过的坑~不知道对你会不会有什么帮助</p>
 <hr>
-<p>嗯，MySQL的官网链接速度不怎么样<a href="https://www.mysql.com/products/community/" target="_blank" rel="noopener">社区版</a> ,下在线安装的版本吧，反正我在学校用宿舍网实在太熬人了。<br>
+<p>嗯，MySQL的官网链接速度不怎么样<a href="https://www.mysql.com/products/community/" target="_blank" rel="noopener">社区版</a> ,下在线安装的版本吧，反正我在学校用宿舍网实在太熬人了。
 <a href="https://dev.mysql.com/downloads/installer/" target="_blank" rel="noopener">MySQL Installer</a> 下载这种东西就慢慢等吧（历史版本也从前面那个页面进）</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#MySQL 和 Python 建立连接</span></span><br><span class="line">pip install mysql-connector-python-rf <span class="comment">#installed mysql-connector-python-rf-2.2.2</span></span><br><span class="line">pip install mysql-connector-python <span class="comment">#installed protobuf-3.10.0 six-1.12.0</span></span><br><span class="line">pip install mysql-connector <span class="comment">#installed mysql-connector-2.2.9</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#如果上面报 ERROR: Command errored out with exit status 1: 就先用下面这个</span></span><br><span class="line">其实更应该拿<span class="string">"error: option --single-version-externally-managed not recognized"</span>当关键字搜</span><br><span class="line"></span><br><span class="line">pip install wheel</span><br></pre></td></tr></table></figure>
 <p><a href="https://blog.csdn.net/tylzvs007/article/details/70213924" target="_blank" rel="noopener">wheel</a></p>
-<h5 id="sqlite-3-30-1"><a class="header-anchor" href="#sqlite-3-30-1">¶¶</a>SQLite(3.30.1)</h5>
+<hr>
+<h3 id="sqlite-3-30-1"><a class="header-anchor" href="#sqlite-3-30-1"></a>SQLite(3.30.1)</h3>
 <p>首先是网络！嗯，我不会再在周五（10.18）的晚上那么安心的的用宿舍网了，一个SQLite安装包一直网络断联~c ；我以为是本身链接就不好，直到我第二天用了手机的热点。</p>
 <ul>
 <li>
 <p>首先，应当了解SQLite在cmd中应该<a href="https://blog.csdn.net/zhan_chi_ao_xiang/article/details/63260955" target="_blank" rel="noopener">如何操作</a> ,具体的操作就不在这里赘述了。在这里所提示的是</p>
 <ul>
 <li>在系统变量中所配的路径中，应当注意目标文件夹中不能有子文件夹</li>
-<li>如果你在sqlite操作中发现 <code>...&gt;</code> 而不是 <code>sqlite&gt;</code> 那是你的命令结尾没有加 <code>;</code> ❗️</li>
+<li>如果你在sqlite操作中发现 <code>...&gt;</code> 而不是 <code>sqlite&gt;</code> 那是你的命令结尾没有加 <code>;</code> :heavy_exclamation_mark:</li>
 <li>退出<code>sqlite命令行</code>使用<code>Crtl+C</code></li>
 </ul>
 </li>
 <li>
-<p>之后，大概了解Python的sqlite3库怎么用。</p>
+<p>之后，大概了解Python的sqlite3库怎么用<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>。</p>
 <ul>
 <li><a href="https://blog.csdn.net/asanscape/article/details/80187854" target="_blank" rel="noopener">轻盈的sqlite</a></li>
 <li><a href="https://www.jianshu.com/p/364d0a239d03" target="_blank" rel="noopener">sqlite基础调用格式</a></li>
@@ -315,9 +376,10 @@ So，<code>有同学推荐了在PyCharm新建项目的时候，勾选 inherit gl
 </li>
 </ul>
 <p><a href="https://www.cnblogs.com/daqingzi/p/9077036.html" target="_blank" rel="noopener">flask连接sqlite出现的几个问题</a></p>
-<h4 id="pip-部分错误的粗略收集"><a class="header-anchor" href="#pip-部分错误的粗略收集">¶¶</a>Pip + 部分错误的粗略收集</h4>
+<hr>
+<h2 id="pip-部分错误的粗略收集"><a class="header-anchor" href="#pip-部分错误的粗略收集"></a>Pip + 部分错误的粗略收集</h2>
 <ul>
-<li>至于<strong>pip</strong>，首先推荐先设置超时操作<code>pip --default-timeout=100 install -U pip</code>，这样可以免去一些报错<code>Read time out</code><br>
+<li>至于<a id="pip1" href="#pip1ref">pip</a>，首先推荐先设置超时操作<br><code>pip --default-timeout=100 install -U pip</code>，这样可以免去一些报错<code>Read time out</code>
 然后是对于Pip崩溃<code>No module named pip</code>最好有一些解决方法，<code>莫名其妙</code>的崩溃？</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 至于我的解决方法，接近玄学...</span></span><br><span class="line"> 先关cmd</span><br><span class="line"> 打开Python的安装包，在<span class="string">"Modify Setup"</span>里面选择<span class="string">"Repair"</span>让它自己修理一遍enm</span><br><span class="line"> <span class="comment">#然后：</span></span><br><span class="line">    python -m ensurepip         <span class="comment"># Successfully installed pip-10.0.1</span></span><br><span class="line">    easy_install pip            <span class="comment"># Best match: pip 10.0.1</span></span><br><span class="line">    pip install --upgrade pip   <span class="comment">#You should consider upgrading via the 'python -m pip install --upgrade pip' command.</span></span><br><span class="line">    python -m pip install --upgrade pip  <span class="comment">#Successfully installed pip-19.3.1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 一顿操作，最后" Successfully installed pip-19.3.1 "</span></span><br></pre></td></tr></table></figure>
@@ -331,13 +393,25 @@ So，<code>有同学推荐了在PyCharm新建项目的时候，勾选 inherit gl
 <p><a href="https://blog.csdn.net/qq_41192383/article/details/86550315" target="_blank" rel="noopener">解决</a></p>
 <pre><code>SQL在flask中的初次设置 Neither SQLALCHEMY_DATABASE_URI nor SQLALCHEMY_BINDS is set
 </code></pre>
-<p><a href="https://blog.csdn.net/weixin_41085315/article/details/79813858" target="_blank" rel="noopener">解决</a>  /  <a href="https://blog.csdn.net/s18362883290/article/details/86475350" target="_blank" rel="noopener">2</a>  /  你要是不想输那个语句也可以进来复制</p>
+<p><a href="https://blog.csdn.net/weixin_41085315/article/details/79813858" target="_blank" rel="noopener">法一</a>  /  <a href="https://blog.csdn.net/s18362883290/article/details/86475350" target="_blank" rel="noopener">法二</a></p>
 <hr>
-<p><a href="https://www.jb51.net/article/134068.htm" target="_blank" rel="noopener">杂</a></p>
-<p><a href="https://www.cnblogs.com/fengff/p/11378789.html" target="_blank" rel="noopener">flask-manager</a><br>
-<a href="https://www.haowuliaoa.com/article/info/452401.html" target="_blank" rel="noopener">SQLAlchemy</a>  /  <a href="https://www.cnblogs.com/lsdb/p/9835894.html" target="_blank" rel="noopener">2</a></p>
-<p><a href="https://blog.csdn.net/sinat_29957455/article/details/80037392" target="_blank" rel="noopener">flask机器模型嵌入web</a></p>
-<h5 id="not-over"><a class="header-anchor" href="#not-over">¶¶</a>Not Over</h5>
+<br>
+<br>
+<hr>
+<p><font size="6" face="Times New Roman"><center><strong>Over</strong></center></font></p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><code>WWWForm：</code> <a href="https://docs.unity3d.com/ScriptReference/WWWForm.html" target="_blank" rel="noopener">官方API</a> <a href="#fnref1" class="footnote-backref">↩</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><code>WebRequest：</code> Unity2019对WWW弃用了，换成了新的API：<a href="https://blog.csdn.net/qq_34818497/article/details/93897480" target="_blank" rel="noopener">UnityWebRequest</a>
+其使用方式也发生了很多改变<a href="https://blog.csdn.net/star__119/article/details/82804201" target="_blank" rel="noopener">post，get请求以及加载AssetBundle</a>等… <a href="#fnref2" class="footnote-backref">↩</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p><code>操作sqlite：</code> Python使用flask框架<a href="https://www.jb51.net/article/134068.htm" target="_blank" rel="noopener">操作<code>sqlite3</code></a>的两种方式：(1.Python使用flask框架操作sqlite3的两种方式;(2.方式二：orm（既flask-SQLAlchemy）
+<a href="https://www.haowuliaoa.com/article/info/452401.html" target="_blank" rel="noopener">SQLAlchemy</a>  和  <a href="https://www.cnblogs.com/lsdb/p/9835894.html" target="_blank" rel="noopener">ORM实现</a>… <a href="#fnref3" class="footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>
 
       
 
@@ -382,7 +456,7 @@ So，<code>有同学推荐了在PyCharm新建项目的时候，勾选 inherit gl
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Hololens踩的坑杂记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hololens坑</a>
         		</li>
       		
 		</ul>
@@ -398,7 +472,7 @@ So，<code>有同学推荐了在PyCharm新建项目的时候，勾选 inherit gl
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/氪盐的路/日常搭环境//" class="article-tag-list-link color1">日常搭环境</a>
+        			<a href="/categories/氪盐的路/HoloLens-Web主线//" class="article-tag-list-link color5">HoloLens-Web主线</a>
         		</li>
       		
 		</ul>
@@ -505,7 +579,7 @@ So，<code>有同学推荐了在PyCharm新建项目的时候，勾选 inherit gl
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#flask-与-unity-的联动"><span class="toc-number">1.</span> <span class="toc-text">¶¶Flask 与 Unity 的联动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#flask"><span class="toc-number">2.</span> <span class="toc-text">¶¶Flask</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#flask-script"><span class="toc-number">2.1.</span> <span class="toc-text">¶¶Flask Script</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#flask-sqlalchemy"><span class="toc-number">2.2.</span> <span class="toc-text">¶¶Flask SQLAlchemy</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#pycharm-flask"><span class="toc-number">2.3.</span> <span class="toc-text">¶¶Pycharm + flask</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#杂"><span class="toc-number">2.4.</span> <span class="toc-text">¶¶杂</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#sql"><span class="toc-number">3.</span> <span class="toc-text">¶¶SQL</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#mysql-8-0-17-弃"><span class="toc-number">3.1.</span> <span class="toc-text">¶¶MySQL（8.0.17）（弃）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#sqlite-3-30-1"><span class="toc-number">3.2.</span> <span class="toc-text">¶¶SQLite(3.30.1)</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pip-部分错误的粗略收集"><span class="toc-number">4.</span> <span class="toc-text">¶¶Pip + 部分错误的粗略收集</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#not-over"><span class="toc-number">4.1.</span> <span class="toc-text">¶¶Not Over</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#font-face-times-new-roman-flask-与-unity-的联动-font"><span class="toc-number">1.</span> <span class="toc-text">Flask 与 Unity 的联动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#flask"><span class="toc-number">2.</span> <span class="toc-text">Flask</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#flask-script"><span class="toc-number">2.1.</span> <span class="toc-text">Flask Script</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flask-sqlalchemy"><span class="toc-number">2.2.</span> <span class="toc-text">Flask SQLAlchemy</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#杂"><span class="toc-number">2.3.</span> <span class="toc-text">杂</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sql"><span class="toc-number">3.</span> <span class="toc-text">SQL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#mysql-8-0-17-弃"><span class="toc-number">3.1.</span> <span class="toc-text">MySQL（8.0.17）（弃）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sqlite-3-30-1"><span class="toc-number">3.2.</span> <span class="toc-text">SQLite(3.30.1)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pip-部分错误的粗略收集"><span class="toc-number">4.</span> <span class="toc-text">Pip + 部分错误的粗略收集</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -617,11 +691,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">创新大赛</a>
+                <a href="javascript:void(0)" class="js-tag color2">腾飞杯——创新创业赛道</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">無論</a>
+                <a href="javascript:void(0)" class="js-tag color1">JetsonNano</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -629,15 +703,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hololens坑</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Java的开始</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Hololens踩的坑杂记</a>
+                <a href="javascript:void(0)" class="js-tag color5">踩坑杂记</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">踩坑杂记</a>
+                <a href="javascript:void(0)" class="js-tag color4">Unity收束线</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">無論</a>
               </li>
             
             <div class="clearfix"></div>

@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hololens-空间映射 | WuLun_HexoBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在实现空间映射demo的时候，当时是按照简书上2016年的教程，试着导入好多的版本的HoloToolkit，可是并没有找到其中的Cursor预制体。 在只导入HoloToolKit包的情况下手动创建&amp;quot;Cursor&amp;quot;，均无法成功实现demo，会在最后上机测试时报&amp;quot;无法查找或打开PDB文件&amp;quot;，“在符号服务器上找不到符号”。在网上寻找常规解决方案后也无法解决。 最">
-<meta name="keywords" content="Hololens踩的坑杂记">
+  <meta name="description" content="微软的MR空间230教程是最好的单独示例的老师。(〃￣︶￣)人(￣︶￣〃)  zh-cn q(≧▽≦q) zh-hk [](￣▽￣)* en-us（￣︶￣）↗　 为什么会有3个版本，因为翻译的问题，联合起来看比较好有的翻译把我看懵过">
+<meta name="keywords" content="Hololens坑">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hololens-空间映射">
 <meta property="og:url" content="http://yoursite.com/2019-11-19/Hololens-空间映射/index.html">
 <meta property="og:site_name" content="WuLun_HexoBlog">
-<meta property="og:description" content="在实现空间映射demo的时候，当时是按照简书上2016年的教程，试着导入好多的版本的HoloToolkit，可是并没有找到其中的Cursor预制体。 在只导入HoloToolKit包的情况下手动创建&amp;quot;Cursor&amp;quot;，均无法成功实现demo，会在最后上机测试时报&amp;quot;无法查找或打开PDB文件&amp;quot;，“在符号服务器上找不到符号”。在网上寻找常规解决方案后也无法解决。 最">
+<meta property="og:description" content="微软的MR空间230教程是最好的单独示例的老师。(〃￣︶￣)人(￣︶￣〃)  zh-cn q(≧▽≦q) zh-hk [](￣▽￣)* en-us（￣︶￣）↗　 为什么会有3个版本，因为翻译的问题，联合起来看比较好有的翻译把我看懵过">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2020-01-10T13:10:18.526Z">
+<meta property="og:updated_time" content="2020-05-18T08:25:00.865Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hololens-空间映射">
-<meta name="twitter:description" content="在实现空间映射demo的时候，当时是按照简书上2016年的教程，试着导入好多的版本的HoloToolkit，可是并没有找到其中的Cursor预制体。 在只导入HoloToolKit包的情况下手动创建&amp;quot;Cursor&amp;quot;，均无法成功实现demo，会在最后上机测试时报&amp;quot;无法查找或打开PDB文件&amp;quot;，“在符号服务器上找不到符号”。在网上寻找常规解决方案后也无法解决。 最">
+<meta name="twitter:description" content="微软的MR空间230教程是最好的单独示例的老师。(〃￣︶￣)人(￣︶￣〃)  zh-cn q(≧▽≦q) zh-hk [](￣▽￣)* en-us（￣︶￣）↗　 为什么会有3个版本，因为翻译的问题，联合起来看比较好有的翻译把我看懵过">
   
     <link rel="alternative" href="/atom.xml" title="WuLun_HexoBlog" type="application/atom+xml">
   
@@ -189,17 +189,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在实现空间映射demo的时候，当时是按照简书上<a href="https://www.jianshu.com/p/53c00080d182" target="_blank" rel="noopener">2016年的教程</a>，试着导入好多的版本的HoloToolkit，可是并没有找到其中的Cursor预制体。<br>
-在只导入HoloToolKit包的情况下手动创建&quot;Cursor&quot;，均无法成功实现demo，会在最后上机测试时报&quot;无法查找或打开PDB文件&quot;，“在符号服务器上找不到符号”。在网上寻找常规解决方案后也无法解决。</p>
-<p>最后回到微软的&quot;<a href="https://docs.microsoft.com/zh-hk/windows/mixed-reality/holograms-230" target="_blank" rel="noopener">MR空间230</a>&quot;</p>
+        <p>微软的<code>MR空间230</code>教程是最好的单独示例的老师。(〃￣︶￣)人(￣︶￣〃)</p>
+<ul>
+<li><a href="https://docs.microsoft.com/zh-cn/windows/mixed-reality/holograms-230" target="_blank" rel="noopener"><code>zh-cn</code></a> q(≧▽≦q)</li>
+<li><a href="https://docs.microsoft.com/zh-hk/windows/mixed-reality/holograms-230" target="_blank" rel="noopener"><code>zh-hk</code></a> []<sub>(￣▽￣)</sub>*</li>
+<li><a href="https://docs.microsoft.com/en-us/windows/mixed-reality/holograms-230" target="_blank" rel="noopener"><code>en-us</code></a>（￣︶￣）↗　
+为什么会有3个版本，因为翻译的问题，联合起来看比较好<sub>有的翻译把我看懵过</sub>
+<br></li>
+</ul>
 <a id="more"></a>
-<p>在学习holograms-230的教程时推荐3个版本的教程一起看（<a href="https://docs.microsoft.com/zh-cn/windows/mixed-reality/holograms-230" target="_blank" rel="noopener">zh-cn</a> / <a href="https://docs.microsoft.com/zh-hk/windows/mixed-reality/holograms-230" target="_blank" rel="noopener">zh-hk</a> / <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/holograms-230" target="_blank" rel="noopener">en-us</a>）因为有的翻译把我看懵过。</p>
-<p>下载project-files的版本为<a href="https://github.com/Microsoft/HolographicAcademy/archive/Holograms-230-SpatialMapping.zip" target="_blank" rel="noopener">这个&lt;–</a>，下载后按照教程打开就好</p>
-<p>另外一个2016年的<a href="http://dev.arinchina.com/177wz/ar9625/9625/1" target="_blank" rel="noopener">教程</a><br>
-有时间康康<a href="http://dev.arinchina.com/177/1" target="_blank" rel="noopener">这个</a>看起来比较简练</p>
-<p>接下来应该是实现空间锚点的示例。</p>
-<p>一个有趣的问题，实时将HoloLens的视频流传输到电脑上，经过电脑的处理后再将一些信息传回Hololens？<br>
-a：socket？联机的socket</p>
+<br>
+<blockquote>
+<p><font size="2">最开始实现空间映射demo的时候，当时是按照简书上<a href="https://www.jianshu.com/p/53c00080d182" target="_blank" rel="noopener">2016年的教程</a>，试着导入好多的版本的HoloToolkit，可是并没有找到其中的Cursor预制体。<br>
+在只导入HoloToolKit包的情况下手动创建&quot;Cursor&quot;，均无法成功实现demo，会在最后上机测试时报&quot;无法查找或打开PDB文件&quot;，“在符号服务器上找不到符号”。在网上寻找常规解决方案后也无法解决。</font></p>
+</blockquote>
+<p><font size="2">点击下载<a href="https://github.com/Microsoft/HolographicAcademy/archive/Holograms-230-SpatialMapping.zip" target="_blank" rel="noopener"><code>project-files</code></a>，下载后按照教程打开即可,代码的解析部分可参照2016年的<a href="http://dev.arinchina.com/177wz/ar9625/9625/1" target="_blank" rel="noopener">教程</a></font></p>
+<center><font size="5">接下来应该是实现空间锚点的示例</font></center>
+<p>一个有趣的问题，实时将HoloLens的视频流传输到电脑上，经过电脑的处理后再将一些信息传回Hololens？</p>
+<p>联机的socket</p>
 <p>嗯，这也是我不会的东西哈哈哈</p>
 <hr>
 <p>获取HoloLens设备的ip</p>
@@ -211,9 +218,9 @@ a：socket？联机的socket</p>
 <hr>
 <p>Chalk（chalk识别优化？） 图像识别有局限性，受物体的表面特征，距离影响，尽量保证在1m内的范围内</p>
 <p>标注区域尽量是平面，景深太大左右移动就会偏移很大。</p>
-<h2 id="hololens实现方式不一样-不需要vuforia"><a class="header-anchor" href="#hololens实现方式不一样-不需要vuforia">¶¶</a>HoloLens实现方式不一样，不需要vuforia</h2>
+<h2 id="hololens实现方式不一样-不需要vuforia"><a class="header-anchor" href="#hololens实现方式不一样-不需要vuforia"></a>HoloLens实现方式不一样，不需要vuforia</h2>
 <p>Unity AR Foundation 中国增强版？</p>
-<p>空间锚点的技术实现，SLAM的图像匹配完成？<br>
+<p>空间锚点的技术实现，SLAM的图像匹配完成？
 上传空间锚点，实际上是传输了环境的mesh和GPS信息？</p>
 <hr>
 <p>怎么在WPF程序里显示控制台信息？</p>
@@ -224,21 +231,27 @@ a：socket？联机的socket</p>
 <hr>
 <p>vuforia + videochatsdk 能实现一种图片标注</p>
 <hr>
-<p>vuforia的发布问题之一enmm<br>
+<p>vuforia的发布问题之一enmm
 在qq的消息记录里…</p>
 <hr>
-<p>webcamera 画面叠加<br>
+<p>webcamera 画面叠加
 嗯，在消息记录里</p>
 <hr>
-<p>demo发布，输入键盘prefab的显示问题<br>
+<p>demo发布，输入键盘prefab的显示问题
 嗯，也在消息记录里。</p>
 <hr>
-<p>HoloLens   扫描结果 通过socketUDP？<br>
+<p>HoloLens   扫描结果 通过socketUDP？
 详细的东西还是在消息记录里</p>
 <hr>
 <p>MRTK里的sharing service，很好用？用它做服务器？</p>
+<p>有时间康康<a href="http://dev.arinchina.com/177/1" target="_blank" rel="noopener">这个</a>看起来比较简练</p>
 <hr>
 <p>HoloLens运行项目时加载指定外部模型， assetbundle</p>
+<p><code>20.03.24记：</code> 这坑都4个月过去了，居然还没有填2333</p>
+<br>
+<br>
+<hr>
+<p><font size="6" face="Times New Roman"><center>Not <strong>Over</strong></center></font></p>
 
       
 
@@ -283,13 +296,28 @@ a：socket？联机的socket</p>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Hololens踩的坑杂记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hololens坑</a>
         		</li>
       		
 		</ul>
 	</div>
 
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/氪盐的路//" class="article-tag-list-link color5">氪盐的路</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/氪盐的路/HoloLens-空间理解主线//" class="article-tag-list-link color1">HoloLens-空间理解主线</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -364,7 +392,7 @@ a：socket？联机的socket</p>
   
   
     <a href="/2019-11-01/flask模塊/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">flask模塊</div>
+      <div class="article-nav-title">flask模塊—简单介绍</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -391,7 +419,7 @@ a：socket？联机的socket</p>
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#hololens实现方式不一样-不需要vuforia"><span class="toc-number">1.</span> <span class="toc-text">¶¶HoloLens实现方式不一样，不需要vuforia</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#hololens实现方式不一样-不需要vuforia"><span class="toc-number">1.</span> <span class="toc-text">HoloLens实现方式不一样，不需要vuforia</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -503,11 +531,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">创新大赛</a>
+                <a href="javascript:void(0)" class="js-tag color2">腾飞杯——创新创业赛道</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">無論</a>
+                <a href="javascript:void(0)" class="js-tag color1">JetsonNano</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -515,15 +543,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hololens坑</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Java的开始</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Hololens踩的坑杂记</a>
+                <a href="javascript:void(0)" class="js-tag color5">踩坑杂记</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">踩坑杂记</a>
+                <a href="javascript:void(0)" class="js-tag color4">Unity收束线</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">無論</a>
               </li>
             
             <div class="clearfix"></div>
